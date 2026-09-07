@@ -1,0 +1,1412 @@
+{
+  "name": "Siren’s Maw: Phosphorescent Abyssal Labyrinth",
+  "raw_description": "\nThis map depicts a hidden pirate cove located inside a massive, partially\nflooded sea cave system. The terrain is a mix of natural wet rock formations and\nman-made wooden structures. Rickety wooden walkways and suspension bridges\nconnect isolated rock islands over dark, deep water, creating a verticality\nwhere falling means fighting aquatic monsters. The walls are irregular and damp,\ncovered in moss and glowing bioluminescent fungi.\n\nScattered throughout the cavern are wrecks of crashed ships that have been\nrepurposed into buildings, serving as shops or enemy barracks. The layout should\nfeel organic and somewhat chaotic, with secret alcoves hidden behind waterfalls\nand large open areas where the underground sea meets a sandy shore. The\ngeneration needs to balance dry land for combat and water tiles that hinder\nmovement, evoking the feeling of a treacherous hideout.\n",
+  "description": "**1. Setting Name**  \n**The Siren’s Maw**\n\n**2. Visual Style & Atmosphere**  \nThe Siren’s Maw is a grim, maritime labyrinth where the sea never truly retreats. The art direction blends gritty, weather‑worn nautical architecture with a touch of eldritch wonder. Rivulets of phosphorescent sea‑fungi pulse along moss‑laden stone walls, casting an eerie blue glow that flickers against the dark, water‑logged corridors. The wooden walkways and suspension bridges are warped, splintered, and sagging from centuries of salt‑laden wind, their planks creaking ominously with every step. Water tiles shimmer with the faint, bioluminescent glow of planktonic life, while the deeper pools ripple with unseen currents.\n\nLighting is low and atmospheric—torches sputter, lanterns sputter, and the only other illumination comes from the fungi and occasional bioluminescent fish that drift by. The ambient soundscape is a constant, low hum of dripping water, the distant crash of waves against unseen rock, the creak of timber, and the muffled, resonant calls of deep‑sea creatures. Occasional gusts of wind carry the metallic tang of rust and the sharp scent of salt, punctuated by the distant, mournful wail of a sea‑bird. The mood is one of claustrophobic awe: a place where every shadow might conceal a trap, every creak could herald a lurking predator, and every step could plunge you into a watery abyss.\n\n**3. The Lore**  \nLong before the sea rose, the cavern was a dry, jagged outcrop that attracted a ragtag band of pirates known as the “Blue‑Skull Corsairs.” They carved a hidden cove out of the rock, building wooden walkways, bridges, and makeshift docks to keep their fleet concealed from the Royal Navy. Over the centuries, the tide grew higher, and the sea began to swallow the cavern’s lower chambers. The pirates, undeterred, repurposed the wrecks of their enemies and the ships that fell into the waters, turning them into fortified barracks, taverns, and black‑market stalls. Their ingenuity turned a natural cave into a sprawling, vertical city.\n\nThe flooding, however, unleashed a darkness. The sea’s ancient magic seeped into the stone, turning the moss into luminous fungi and the water into a living, sentient thing. The pirates soon discovered that the deeper they ventured, the more the water seemed to move of its own accord—currents that could drag a man to his doom in a heartbeat. Legends grew of a drowned captain, once the most feared pirate in the Caribbean, who fell into the cavern during a storm and was claimed by the sea. His spirit, now a towering Sea Wraith, commands the waters and the monsters that lurk beneath, feeding on the greed and blood of those who seek the treasure hidden within the Maw.\n\n**4. The Core Conflict**  \nAt the heart of the Siren’s Maw lies a living curse: the Sea Wraith, a colossal, drowned pirate lord who has become a spectral tyrant. He controls the tides, summons aquatic monsters, and manipulates the cavern’s architecture—sliding stone walls, flooding corridors, and spawning deadly water currents. The Wraith’s ultimate goal is to reclaim the treasure he lost, and he will not rest until the Maw is sealed from the world above.\n\nPlayers confront this threat in a multi‑layered battle: they must navigate the treacherous, water‑laden labyrinth, avoid or defeat the Wraith’s aquatic minions, and unravel the secrets of the cavern’s ancient curse. The core conflict is not just a fight against a single enemy but a struggle against an ever‑changing environment that punishes missteps with drowning, falling, or being swallowed by the sea’s hungry maw. The only way to survive is to master the verticality, harness the bioluminescent fungi’s strange powers, and ultimately decide whether to break the curse or become the next chapter in the Siren’s Maw’s dark legend.",
+  "generation_time_seconds": 125,
+  "player": {
+    "tile": {
+      "name": "player_ship",
+      "description": "A battered, weathered wooden hull, scarred by sea and time, yet still afloat.",
+      "color": "#8B4513"
+    },
+    "back_history": "Once a notorious sea captain of the Blue‑Skull Corsairs, I was betrayed by my crew and left marooned in the Siren’s Maw. Driven by a thirst for redemption and the promise of the lost treasure, I return to reclaim my honor and undo the curse that now consumes my former allies.",
+    "tile_with_texture": {
+      "name": "player_ship",
+      "description": "A battered, weathered wooden hull, scarred by sea and time, yet still afloat.",
+      "color": "#8B4513",
+      "texture": {
+        "tileset_position": {
+          "x": 31,
+          "y": 2
+        },
+        "tileset_description": "A man wearing a hat and holding a piece of wood."
+      }
+    }
+  },
+  "dungeon_levels": {
+    "items": [
+      {
+        "description": "A damp, shallow chamber where the sea barely touches the stone. Low, flickering torchlight struggles against the darkness, and the air smells of salt, rotting wood, and damp algae. The floor is slick and uneven, and a faint phosphorescent glow from sea‑fungi pulses along the walls.",
+        "name": "The Entrance Grotto",
+        "depth": 1,
+        "wall_tile": {
+          "name": "rusted_wood_wall",
+          "description": "Warped, splintered wooden planks corroded by salt water.",
+          "color": "#4A2C2A"
+        },
+        "floor_tile": {
+          "name": "waterlogged_stone_floor",
+          "description": "Slick stone covered in algae and moss, slick to the touch.",
+          "color": "#2E2E2E"
+        },
+        "wall_tile_with_texture": {
+          "name": "rusted_wood_wall",
+          "description": "Warped, splintered wooden planks corroded by salt water.",
+          "color": "#4A2C2A",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "waterlogged_stone_floor",
+          "description": "Slick stone covered in algae and moss, slick to the touch.",
+          "color": "#2E2E2E",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "A partially flooded dock with wooden planks creaking underfoot. Bioluminescent fungi cling to the beams, casting an eerie blue glow. The scent of old oil and brine mixes with the damp air. Water currents ripple gently, carrying faint whispers of the sea.",
+        "name": "The Old Dockyard",
+        "depth": 2,
+        "wall_tile": {
+          "name": "silted_rock_wall",
+          "description": "Rocks coated in silt and sea‑fungi, giving a soft greenish hue.",
+          "color": "#5C4A3B"
+        },
+        "floor_tile": {
+          "name": "marsh_stone_floor",
+          "description": "Stone floor damp with moss and shallow water.",
+          "color": "#3A3A3A"
+        },
+        "wall_tile_with_texture": {
+          "name": "silted_rock_wall",
+          "description": "Rocks coated in silt and sea‑fungi, giving a soft greenish hue.",
+          "color": "#5C4A3B",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "marsh_stone_floor",
+          "description": "Stone floor damp with moss and shallow water.",
+          "color": "#3A3A3A",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "Deeper chambers where the water rises to waist height. Currents swirl around broken wooden benches and tattered banners. Torches sputter, providing weak light that flickers against the wet walls. The air smells of brine, mildew, and the faint scent of ancient shipwrecks.",
+        "name": "The Sunken Barracks",
+        "depth": 3,
+        "wall_tile": {
+          "name": "corroded_ship_wall",
+          "description": "Rusted hull plates and warped timbers from long‑ago vessels.",
+          "color": "#6A4D3B"
+        },
+        "floor_tile": {
+          "name": "planktonic_water_floor",
+          "description": "Shallow, glowing water filled with floating plankton.",
+          "color": "#0F3C4F"
+        },
+        "wall_tile_with_texture": {
+          "name": "corroded_ship_wall",
+          "description": "Rusted hull plates and warped timbers from long‑ago vessels.",
+          "color": "#6A4D3B",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "planktonic_water_floor",
+          "description": "Shallow, glowing water filled with floating plankton.",
+          "color": "#0F3C4F",
+          "texture": {
+            "tileset_position": {
+              "x": 14,
+              "y": 5
+            },
+            "tileset_description": "A puddle of water."
+          }
+        }
+      },
+      {
+        "description": "A cavernous space where phosphorescent sea‑fungi grow in towering clusters, bathing the room in a soft blue light. The sound of dripping water is punctuated by distant, resonant calls of unseen creatures. The air is heavy with the scent of damp moss, seaweed, and a faint metallic tang.",
+        "name": "The Fungal Cathedral",
+        "depth": 4,
+        "wall_tile": {
+          "name": "luminescent_fungus_wall",
+          "description": "Walls sprouting luminous fungal growths, forming a living ceiling.",
+          "color": "#2B5E5E"
+        },
+        "floor_tile": {
+          "name": "fungus_glow_floor",
+          "description": "Floor covered in bioluminescent fungi, emitting a steady glow.",
+          "color": "#1A4E4E"
+        },
+        "wall_tile_with_texture": {
+          "name": "luminescent_fungus_wall",
+          "description": "Walls sprouting luminous fungal growths, forming a living ceiling.",
+          "color": "#2B5E5E",
+          "texture": {
+            "tileset_position": {
+              "x": 9,
+              "y": 7
+            },
+            "tileset_description": "Wooden ceiling cabinet open."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "fungus_glow_floor",
+          "description": "Floor covered in bioluminescent fungi, emitting a steady glow.",
+          "color": "#1A4E4E",
+          "texture": {
+            "tileset_position": {
+              "x": 11,
+              "y": 1
+            },
+            "tileset_description": "A muddy floor."
+          }
+        }
+      },
+      {
+        "description": "A vast chamber where swirling currents crash against the walls, creating a constant, low hum. The sea‑wraith's presence is felt as a chill that cuts through the warm, salty air. The light from the fungi flickers wildly, casting shifting shadows. The smell of ozone mingles with the old salt, and the distant wail of a sea‑bird echoes through the void.",
+        "name": "The Wraith's Throne Room",
+        "depth": 5,
+        "wall_tile": {
+          "name": "shifting_rock_wall",
+          "description": "Walls that move and shift, reshaping the chamber as the sea‑wraith commands.",
+          "color": "#1E1E3A"
+        },
+        "floor_tile": {
+          "name": "abyssal_water_floor",
+          "description": "Deep, dark water that seems to swallow light, with occasional currents of bioluminescent plankton.",
+          "color": "#0A0A2A"
+        },
+        "wall_tile_with_texture": {
+          "name": "shifting_rock_wall",
+          "description": "Walls that move and shift, reshaping the chamber as the sea‑wraith commands.",
+          "color": "#1E1E3A",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 16
+            },
+            "tileset_description": "A stone wall with a door in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "abyssal_water_floor",
+          "description": "Deep, dark water that seems to swallow light, with occasional currents of bioluminescent plankton.",
+          "color": "#0A0A2A",
+          "texture": {
+            "tileset_position": {
+              "x": 14,
+              "y": 5
+            },
+            "tileset_description": "A puddle of water."
+          }
+        }
+      },
+      {
+        "description": "The deepest, most chaotic part of the Maw. Water surges like a storm, with currents that can pull a creature into a whirlpool in an instant. Lightning crackles in the mist, and thunderous echoes reverberate through the stone. The air tastes of ozone, decay, and the metallic tang of rust. The sea‑wraith's power is at its peak, and the environment itself is a living, breathing threat.",
+        "name": "The Maw's Core",
+        "depth": 6,
+        "wall_tile": {
+          "name": "tide_wall",
+          "description": "Walls made of living tide, constantly moving and reshaping, as if alive.",
+          "color": "#1B1B1B"
+        },
+        "floor_tile": {
+          "name": "storm_water_floor",
+          "description": "Dark, turbulent water that roils with bioluminescent flashes, resembling a miniature storm.",
+          "color": "#000000"
+        },
+        "wall_tile_with_texture": {
+          "name": "tide_wall",
+          "description": "Walls made of living tide, constantly moving and reshaping, as if alive.",
+          "color": "#1B1B1B",
+          "texture": {
+            "tileset_position": {
+              "x": 13,
+              "y": 14
+            },
+            "tileset_description": "A wall of long, horizontal stone bricks."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "storm_water_floor",
+          "description": "Dark, turbulent water that roils with bioluminescent flashes, resembling a miniature storm.",
+          "color": "#000000",
+          "texture": {
+            "tileset_position": {
+              "x": 14,
+              "y": 5
+            },
+            "tileset_description": "A puddle of water."
+          }
+        }
+      }
+    ]
+  },
+  "enemies": {
+    "items": [
+      {
+        "tile": {
+          "name": "flicker_fungus_fly",
+          "description": "A translucent insect that glows like a phosphorescent fungus, darting between stone pillars.",
+          "color": "#4A7FBB"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "flicker_fungus_fly",
+          "description": "A translucent insect that glows like a phosphorescent fungus, darting between stone pillars.",
+          "color": "#4A7FBB",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 5
+            },
+            "tileset_description": "An insect with multiple legs. It resembles a spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sea_wraith_minion",
+          "description": "A spectral pirate with tattered sails, drifting through the water, draining life.",
+          "color": "#8B0000"
+        },
+        "weight": 5,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "sea_wraith_minion",
+          "description": "A spectral pirate with tattered sails, drifting through the water, draining life.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "crystalline_corruptor",
+          "description": "A small, fast-moving rock with glowing veins that siphons health.",
+          "color": "#D3D3D3"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "crystalline_corruptor",
+          "description": "A small, fast-moving rock with glowing veins that siphons health.",
+          "color": "#D3D3D3",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "murk_mist_marauder",
+          "description": "A lanky figure cloaked in swirling mist, striking before retreating.",
+          "color": "#2F4F4F"
+        },
+        "weight": 4,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "murk_mist_marauder",
+          "description": "A lanky figure cloaked in swirling mist, striking before retreating.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 0
+            },
+            "tileset_description": "A human being with a sword and a shield. Possibly a warrior, but without armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "tide_tethered_troll",
+          "description": "A hulking troll bound to the currents, slow but crushing.",
+          "color": "#556B2F"
+        },
+        "weight": 7,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "tide_tethered_troll",
+          "description": "A hulking troll bound to the currents, slow but crushing.",
+          "color": "#556B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "plankton_pouncer",
+          "description": "A quick, jellyfish-like creature that snaps at adventurers.",
+          "color": "#00CED1"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "plankton_pouncer",
+          "description": "A quick, jellyfish-like creature that snaps at adventurers.",
+          "color": "#00CED1",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "silt_slinger",
+          "description": "A sand-coated ghoul that throws grains of silt to blind foes.",
+          "color": "#8B4513"
+        },
+        "weight": 4,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "silt_slinger",
+          "description": "A sand-coated ghoul that throws grains of silt to blind foes.",
+          "color": "#8B4513",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 0
+            },
+            "tileset_description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "kelp_killer",
+          "description": "A wiry eel that weaves through kelp, striking with electric shocks.",
+          "color": "#006400"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "kelp_killer",
+          "description": "A wiry eel that weaves through kelp, striking with electric shocks.",
+          "color": "#006400",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 8
+            },
+            "tileset_description": "A snake, an eel, a serpent."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "coral_crawler",
+          "description": "A crustacean with a shell of living coral, slowly ambushing.",
+          "color": "#8B0000"
+        },
+        "weight": 5,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "coral_crawler",
+          "description": "A crustacean with a shell of living coral, slowly ambushing.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 5
+            },
+            "tileset_description": "A warrior spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "salt_spider",
+          "description": "A giant spider that spins webs of salt crust, trapping and draining.",
+          "color": "#B22222"
+        },
+        "weight": 6,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "salt_spider",
+          "description": "A giant spider that spins webs of salt crust, trapping and draining.",
+          "color": "#B22222",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 5
+            },
+            "tileset_description": "A warrior spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "abyssal_buccaneer",
+          "description": "A former pirate captain's spirit, armed with spectral cutlass.",
+          "color": "#2E8B57"
+        },
+        "weight": 8,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "abyssal_buccaneer",
+          "description": "A former pirate captain's spirit, armed with spectral cutlass.",
+          "color": "#2E8B57",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "wave_wraith",
+          "description": "A translucent wave spirit that lures prey into drowning.",
+          "color": "#1E90FF"
+        },
+        "weight": 7,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "wave_wraith",
+          "description": "A translucent wave spirit that lures prey into drowning.",
+          "color": "#1E90FF",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "deep_drifter",
+          "description": "A massive, slow-moving mass of seaweed and debris, crushing everything.",
+          "color": "#556B2F"
+        },
+        "weight": 9,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "deep_drifter",
+          "description": "A massive, slow-moving mass of seaweed and debris, crushing everything.",
+          "color": "#556B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_raven",
+          "description": "A skeletal bird with rusted feathers, haunting the upper decks.",
+          "color": "#708090"
+        },
+        "weight": 5,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "rusted_raven",
+          "description": "A skeletal bird with rusted feathers, haunting the upper decks.",
+          "color": "#708090",
+          "texture": {
+            "tileset_position": {
+              "x": 26,
+              "y": 8
+            },
+            "tileset_description": "A bat or a little demon. A flying creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "foam_fanatic",
+          "description": "A zealous cultist who uses foam to suffocate enemies.",
+          "color": "#F0E68C"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "foam_fanatic",
+          "description": "A zealous cultist who uses foam to suffocate enemies.",
+          "color": "#F0E68C",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cobble_crawler",
+          "description": "A stone golem that moves through cobblestones, crushing with its fists.",
+          "color": "#808080"
+        },
+        "weight": 6,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "cobble_crawler",
+          "description": "A stone golem that moves through cobblestones, crushing with its fists.",
+          "color": "#808080",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sea_wraith_king",
+          "description": "The towering spectral pirate lord, commanding the waters.",
+          "color": "#000000"
+        },
+        "weight": 10,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "sea_wraith_king",
+          "description": "The towering spectral pirate lord, commanding the waters.",
+          "color": "#000000",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "tide_titan",
+          "description": "A colossal sea monster, a fusion of leviathan and ancient wreck, flooding corridors.",
+          "color": "#004080"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "tide_titan",
+          "description": "A colossal sea monster, a fusion of leviathan and ancient wreck, flooding corridors.",
+          "color": "#004080",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 6
+            },
+            "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corrosion_colossus",
+          "description": "A massive rusted wreck that moves, crushing all in its path.",
+          "color": "#B8860B"
+        },
+        "weight": 9,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "corrosion_colossus",
+          "description": "A massive rusted wreck that moves, crushing all in its path.",
+          "color": "#B8860B",
+          "texture": {
+            "tileset_position": {
+              "x": 11,
+              "y": 20
+            },
+            "tileset_description": "A war tank."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "abyssal_angler",
+          "description": "A gigantic anglerfish with a bioluminescent lure that drags players into the deep.",
+          "color": "#2F4F4F"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "abyssal_angler",
+          "description": "A gigantic anglerfish with a bioluminescent lure that drags players into the deep.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 25,
+              "y": 8
+            },
+            "tileset_description": "An octopus, an alien, a creature from another universe."
+          }
+        }
+      }
+    ]
+  },
+  "weapons": {
+    "items": [
+      {
+        "tile": {
+          "name": "rusty_cutlass",
+          "description": "A once gleaming cutlass now dulled by salt and time, its edge riddled with rust.",
+          "color": "#8B4513"
+        },
+        "rarity": 1,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusty_cutlass",
+          "description": "A once gleaming cutlass now dulled by salt and time, its edge riddled with rust.",
+          "color": "#8B4513",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "drowned_dagger",
+          "description": "A small dagger with a handle of driftwood, its blade stained with the sea's black ink.",
+          "color": "#2F4F4F"
+        },
+        "rarity": 1,
+        "weight": 1,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "drowned_dagger",
+          "description": "A small dagger with a handle of driftwood, its blade stained with the sea's black ink.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 6
+            },
+            "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "worn_flintlock",
+          "description": "A single-shot flintlock with cracked glass sights, its barrel corroded by brine.",
+          "color": "#708090"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "worn_flintlock",
+          "description": "A single-shot flintlock with cracked glass sights, its barrel corroded by brine.",
+          "color": "#708090",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "broken_harpoon",
+          "description": "A harpoon with a splintered tip, its haft warped by years of immersion.",
+          "color": "#556B2F"
+        },
+        "rarity": 1,
+        "weight": 3,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "broken_harpoon",
+          "description": "A harpoon with a splintered tip, its haft warped by years of immersion.",
+          "color": "#556B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 5
+            },
+            "tileset_description": "An iron spear with a hook or anchor at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cracked_spear",
+          "description": "A spear with a chipped head, its shaft scarred by countless collisions.",
+          "color": "#A0522D"
+        },
+        "rarity": 1,
+        "weight": 3,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "cracked_spear",
+          "description": "A spear with a chipped head, its shaft scarred by countless collisions.",
+          "color": "#A0522D",
+          "texture": {
+            "tileset_position": {
+              "x": 34,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with detail on the bottom."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "worn_battle_hammer",
+          "description": "A hammer whose head is pitted, its handle worn smooth by rough hands.",
+          "color": "#696969"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "worn_battle_hammer",
+          "description": "A hammer whose head is pitted, its handle worn smooth by rough hands.",
+          "color": "#696969",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "seafloor_bow",
+          "description": "A bow crafted from kelp fibers and polished stone, its string brittle.",
+          "color": "#1E90FF"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "seafloor_bow",
+          "description": "A bow crafted from kelp fibers and polished stone, its string brittle.",
+          "color": "#1E90FF",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 6
+            },
+            "tileset_description": "A rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_crossbow",
+          "description": "A crossbow with a rusted bolt and a warped stock, yet still functional.",
+          "color": "#8B0000"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "rusted_crossbow",
+          "description": "A crossbow with a rusted bolt and a warped stock, yet still functional.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 5
+            },
+            "tileset_description": "Medium-sized wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "faded_scepter",
+          "description": "A scepter once vibrant, now faded, its crystal dimming.",
+          "color": "#B8860B"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "faded_scepter",
+          "description": "A scepter once vibrant, now faded, its crystal dimming.",
+          "color": "#B8860B",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "worn_sea_staff",
+          "description": "A staff carved from driftwood, its tip encrusted with sea‑fungi.",
+          "color": "#228B22"
+        },
+        "rarity": 1,
+        "weight": 3,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "worn_sea_staff",
+          "description": "A staff carved from driftwood, its tip encrusted with sea‑fungi.",
+          "color": "#228B22",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "tattered_trident",
+          "description": "A trident with frayed prongs, its metal corroded by salt.",
+          "color": "#2E8B57"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "tattered_trident",
+          "description": "A trident with frayed prongs, its metal corroded by salt.",
+          "color": "#2E8B57",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "worn_blunderbuss",
+          "description": "A blunderbuss with a cracked barrel and a warped stock, its powder still potent.",
+          "color": "#D2691E"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "worn_blunderbuss",
+          "description": "A blunderbuss with a cracked barrel and a warped stock, its powder still potent.",
+          "color": "#D2691E",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "broken_scythe",
+          "description": "A scythe with a broken blade, its handle splintered.",
+          "color": "#708090"
+        },
+        "rarity": 1,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "broken_scythe",
+          "description": "A scythe with a broken blade, its handle splintered.",
+          "color": "#708090",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 2
+            },
+            "tileset_description": "Detailed scythe."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_mace",
+          "description": "A mace with a rusted head, its handle worn smooth.",
+          "color": "#A9A9A9"
+        },
+        "rarity": 1,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusted_mace",
+          "description": "A mace with a rusted head, its handle worn smooth.",
+          "color": "#A9A9A9",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "dried_net",
+          "description": "A net frayed at the edges, its mesh stiffened by salt.",
+          "color": "#8B4513"
+        },
+        "rarity": 1,
+        "weight": 2,
+        "mana_cost": 1,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "dried_net",
+          "description": "A net frayed at the edges, its mesh stiffened by salt.",
+          "color": "#8B4513",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 17
+            },
+            "tileset_description": "A cooked fish, with its bones showing."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sapphire_cutlass",
+          "description": "A cutlass with a blade of polished sapphire, humming faintly with latent power.",
+          "color": "#0F52BA"
+        },
+        "rarity": 5,
+        "weight": 4,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "sapphire_cutlass",
+          "description": "A cutlass with a blade of polished sapphire, humming faintly with latent power.",
+          "color": "#0F52BA",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "coral_dagger",
+          "description": "A dagger forged from living coral, its tip pulsing with a gentle glow.",
+          "color": "#FF7F50"
+        },
+        "rarity": 5,
+        "weight": 2,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "coral_dagger",
+          "description": "A dagger forged from living coral, its tip pulsing with a gentle glow.",
+          "color": "#FF7F50",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 6
+            },
+            "tileset_description": "A very rare iron dagger."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "storm_flintlock",
+          "description": "A flintlock that crackles with static, its barrel etched with swirling storm motifs.",
+          "color": "#4682B4"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "storm_flintlock",
+          "description": "A flintlock that crackles with static, its barrel etched with swirling storm motifs.",
+          "color": "#4682B4",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 2
+            },
+            "tileset_description": "Quiver of arrows."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "tide_harpoon",
+          "description": "A harpoon whose tip coils with tidal energy, leaving a faint trail of mist.",
+          "color": "#1E90FF"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "tide_harpoon",
+          "description": "A harpoon whose tip coils with tidal energy, leaving a faint trail of mist.",
+          "color": "#1E90FF",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 5
+            },
+            "tileset_description": "An iron spear with a hook or anchor at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "leviathan_spear",
+          "description": "A spear with a head shaped like a leviathan's jaw, its shaft carved from ancient wood.",
+          "color": "#2E8B57"
+        },
+        "rarity": 7,
+        "weight": 6,
+        "mana_cost": 7,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "leviathan_spear",
+          "description": "A spear with a head shaped like a leviathan's jaw, its shaft carved from ancient wood.",
+          "color": "#2E8B57",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "kraken_hammer",
+          "description": "A hammer whose head resembles a kraken's claw, its surface etched with tentacle patterns.",
+          "color": "#4B0082"
+        },
+        "rarity": 7,
+        "weight": 7,
+        "mana_cost": 6,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "kraken_hammer",
+          "description": "A hammer whose head resembles a kraken's claw, its surface etched with tentacle patterns.",
+          "color": "#4B0082",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "nautilus_bow",
+          "description": "A bow whose limbs spiral like a nautilus shell, resonating with deep‑sea tones.",
+          "color": "#2F4F4F"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "nautilus_bow",
+          "description": "A bow whose limbs spiral like a nautilus shell, resonating with deep‑sea tones.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 40,
+              "y": 6
+            },
+            "tileset_description": "A very rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "brine_crossbow",
+          "description": "A crossbow forged from brine‑cured steel, its bolts humming with salt.",
+          "color": "#556B2F"
+        },
+        "rarity": 6,
+        "weight": 6,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "brine_crossbow",
+          "description": "A crossbow forged from brine‑cured steel, its bolts humming with salt.",
+          "color": "#556B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 39,
+              "y": 5
+            },
+            "tileset_description": "Large wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "luminous_scepter",
+          "description": "A scepter that glows with bioluminescent light, its crystal pulsing in sync with the tide.",
+          "color": "#00CED1"
+        },
+        "rarity": 7,
+        "weight": 3,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "luminous_scepter",
+          "description": "A scepter that glows with bioluminescent light, its crystal pulsing in sync with the tide.",
+          "color": "#00CED1",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sirens_edge",
+          "description": "A sword forged from the heart of a siren, its blade singing with the ocean's lament.",
+          "color": "#191970"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "sirens_edge",
+          "description": "A sword forged from the heart of a siren, its blade singing with the ocean's lament.",
+          "color": "#191970",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 8
+            },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "abyssal_cannon",
+          "description": "A massive cannon that feeds on abyssal pressure, its barrel pulsing with dark energy.",
+          "color": "#000000"
+        },
+        "rarity": 10,
+        "weight": 10,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "abyssal_cannon",
+          "description": "A massive cannon that feeds on abyssal pressure, its barrel pulsing with dark energy.",
+          "color": "#000000",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 8
+            },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "leviathans_heart_staff",
+          "description": "A staff carved from the heartwood of a leviathan, its core beating with life.",
+          "color": "#006400"
+        },
+        "rarity": 9,
+        "weight": 9,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "leviathans_heart_staff",
+          "description": "A staff carved from the heartwood of a leviathan, its core beating with life.",
+          "color": "#006400",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "krakens_eye_wand",
+          "description": "A wand tipped with a crystal eye of a kraken, radiating eldritch power.",
+          "color": "#8B0000"
+        },
+        "rarity": 10,
+        "weight": 7,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "krakens_eye_wand",
+          "description": "A wand tipped with a crystal eye of a kraken, radiating eldritch power.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "maelstrom_trident",
+          "description": "A trident that channels the maelstrom, its prongs swirling with storm energy.",
+          "color": "#00008B"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "maelstrom_trident",
+          "description": "A trident that channels the maelstrom, its prongs swirling with storm energy.",
+          "color": "#00008B",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "wraiths_requiem",
+          "description": "An ethereal blade that whispers the wraith's lament, its edge made of living mist.",
+          "color": "#2F4F4F"
+        },
+        "rarity": 10,
+        "weight": 9,
+        "mana_cost": 10,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "wraiths_requiem",
+          "description": "An ethereal blade that whispers the wraith's lament, its edge made of living mist.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 8
+            },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      }
+    ]
+  },
+  "final_objective": {
+    "tile": {
+      "name": "siren_heart",
+      "description": "A pulsating orb of living salt, crackling with trapped storm energy, its surface swirling with bioluminescent mist. The Siren’s Heart glows with an impossible azure light, surrounded by rippling water that seems to breathe around it.",
+      "color": "#0047AB"
+    },
+    "back_history": "The Siren’s Heart is the pulsing core of the drowned pirate lord’s power, a crystalized mass of brine and storm‑bound lightning that once housed Captain Marrow’s beating heart. When the sea rose, the Captain’s soul was trapped within this orb, binding the cavern’s waters to his will and giving rise to the Sea Wraith’s relentless curse. The Heart is the source of the Maw’s living corruption: it feeds on the greed of intruders, summons the ocean’s monsters, and manipulates the very stone to drown all who dare seek its treasure. Only by retrieving the Siren’s Heart and returning it to the surface can the curse be broken, the Wraith’s spectral reign ended, and the cavern’s waters be freed from its eternal torment. Leaving the Heart behind would allow the Wraith to grow stronger, sealing the Maw forever and turning all who venture below into new victims of the sea’s hunger.",
+    "tile_with_texture": {
+      "name": "siren_heart",
+      "description": "A pulsating orb of living salt, crackling with trapped storm energy, its surface swirling with bioluminescent mist. The Siren’s Heart glows with an impossible azure light, surrounded by rippling water that seems to breathe around it.",
+      "color": "#0047AB",
+      "texture": {
+        "tileset_position": {
+          "x": 32,
+          "y": 15
+        },
+        "tileset_description": "Map. Treasure map."
+      }
+    }
+  },
+  "usage_metadata": {
+    "openai/gpt-oss-20b": {
+      "output_tokens": 12417,
+      "output_token_details": {
+        "reasoning": 7538
+      },
+      "input_tokens": 9142,
+      "total_tokens": 21559
+    }
+  }
+}

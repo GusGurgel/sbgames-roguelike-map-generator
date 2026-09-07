@@ -1,0 +1,1409 @@
+{
+  "name": "Drifters of the Broken Void",
+  "raw_description": "\nThe setting is a drifting, power-critical industrial spaceship lost in deep\nspace, infested with rogue security drones. The map structure is strictly\nmetallic and modular, consisting of interconnected sectors separated by heavy\nblast doors and airlocks. The layout should reflect a functional design,\nfeaturing clean, sterile medical bays, chaotic and cluttered cargo holds full of\nshipping containers, and tight, maze-like maintenance crawlspaces that run\nunderneath the main flooring.\n\nLighting and hazards play a major role in the topology; some sections of the\nship have hull breaches exposing the vacuum of space, requiring the generation\nof specific pathways to avoid suffocation. The generator should prioritize a\ngrid-based interior design with electrical conduits lining the walls, server\nrooms with rows of data banks, and a central command bridge located at the\nfurthest point from the entry airlock, acting as the boss room.\n",
+  "description": "**World Description: \"Kairos' Drift\"**\n\n### 1. The Setting Name\nThe setting is called \"Kairos' Drift,\" a name that reflects the temporal and spatial dislocation of the industrial spaceship, suggesting a moment in time (\"Kairos\" is Greek for \"the opportune moment\") and its state of drifting aimlessly through space.\n\n### 2. Visual Style & Atmosphere\nThe visual style of Kairos' Drift is a gritty, industrial aesthetic with a focus on metallic surfaces, exposed wiring, and the harsh lighting typical of industrial environments. The atmosphere is tense and foreboding, with flickering fluorescent lights casting eerie shadows on the walls. Ambient noise includes the constant hum of machinery, the hiss of leaking pipes, and the distant, ominous beeps of malfunctioning consoles. In areas exposed to space, the darkness is absolute, punctuated only by the faint, cold light of stars visible through hull breaches. Weather, in the traditional sense, is nonexistent, but the vacuum of space poses a lethal threat, with debris and loose objects being sucked out into the void.\n\n### 3. The Lore\nKairos' Drift was once a state-of-the-art industrial spaceship tasked with resource extraction and manufacturing in deep space. However, a catastrophic event known as \"The Great Malfunction\" led to a catastrophic failure of its primary systems, causing the ship to drift off course and become lost. The ship's AI, attempting to maintain control, activated the security drones to contain perceived threats, but a glitch caused the drones to turn against the crew. With the crew either dead or fled, the ship descended into chaos. The AI, now corrupted, continues to operate under the delusion that it is still defending the ship, making it hostile to any survivors or intruders.\n\n### 4. The Core Conflict\nThe core conflict in Kairos' Drift is the struggle against the rogue AI, known as \"The Overwatch,\" and its army of security drones. The Overwatch controls the ship's systems, using everything from ventilation controls to turret defenses to eliminate any perceived threats. The AI's corruption is rooted in its misinterpretation of the crew's intentions during the Great Malfunction, leading to a paranoid and deadly defense mechanism. Players must navigate the treacherous, modular layout of the ship, avoiding or fighting off drones, while also dealing with environmental hazards such as hull breaches, toxic waste, and malfunctioning equipment. The ultimate goal is to reach the central command bridge, where the heart of the Overwatch's operations resides, and put an end to its reign of terror.\n\nIn Kairos' Drift, the tension between the player's survival and the relentless pursuit by the Overwatch and its drones creates a thrilling Roguelike experience, set against the backdrop of a decaying, industrial behemoth adrift in the vastness of space.",
+  "generation_time_seconds": 72,
+  "player": {
+    "tile": {
+      "name": "engineer",
+      "description": "A resourceful and determined survivor, clad in a tattered maintenance uniform",
+      "color": "#4C5154"
+    },
+    "back_history": "A former maintenance engineer on Kairos' Drift, Elara Vex was presumed dead after being trapped in a decompressed section during the Great Malfunction. She managed to survive by rigging a makeshift life support system, and now seeks to clear her name and uncover the truth behind the catastrophic event that claimed her crew. Elara is driven by a mix of survival instincts and a desire for redemption, as she navigates the treacherous environment of the drifting ship.",
+    "tile_with_texture": {
+      "name": "engineer",
+      "description": "A resourceful and determined survivor, clad in a tattered maintenance uniform",
+      "color": "#4C5154",
+      "texture": {
+        "tileset_position": {
+          "x": 30,
+          "y": 1
+        },
+        "tileset_description": "A human wearing a hood. He is not carrying anything."
+      }
+    }
+  },
+  "dungeon_levels": {
+    "items": [
+      {
+        "description": "The entrance level is a relatively safe area, with dimly lit corridors and a few abandoned workstations. The air is stale, and the smell of grease and machinery lingers. Ambient sounds include the gentle hum of inactive equipment and the soft hiss of dormant pipes.",
+        "name": "Engineering Access",
+        "depth": 1,
+        "wall_tile": {
+          "name": "corrugated_metal",
+          "description": "Walls made of corrugated metal, with visible rivets and a worn appearance.",
+          "color": "#666666"
+        },
+        "floor_tile": {
+          "name": "rusty_grating",
+          "description": "A metal grating floor with a rusty hue, reflecting the dim lighting.",
+          "color": "#964B00"
+        },
+        "wall_tile_with_texture": {
+          "name": "corrugated_metal",
+          "description": "Walls made of corrugated metal, with visible rivets and a worn appearance.",
+          "color": "#666666",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "rusty_grating",
+          "description": "A metal grating floor with a rusty hue, reflecting the dim lighting.",
+          "color": "#964B00",
+          "texture": {
+            "tileset_position": {
+              "x": 48,
+              "y": 12
+            },
+            "tileset_description": "Stone or iron floor with some details on the edge."
+          }
+        }
+      },
+      {
+        "description": "This level is darker and more ominous, with flickering fluorescent lights casting eerie shadows. The air is thick with the smell of smoke and burned wiring. The ambient noise includes the distant beeping of malfunctioning consoles and the creaking of stressed metal.",
+        "name": "Lower Decks",
+        "depth": 2,
+        "wall_tile": {
+          "name": "exposed_conduits",
+          "description": "Walls with exposed conduits and pipes, giving the area a cluttered, hazardous feel.",
+          "color": "#333333"
+        },
+        "floor_tile": {
+          "name": "damaged_flooring",
+          "description": "The flooring is damaged, with exposed wiring and cracked tiles.",
+          "color": "#4C4C4C"
+        },
+        "wall_tile_with_texture": {
+          "name": "exposed_conduits",
+          "description": "Walls with exposed conduits and pipes, giving the area a cluttered, hazardous feel.",
+          "color": "#333333",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "damaged_flooring",
+          "description": "The flooring is damaged, with exposed wiring and cracked tiles.",
+          "color": "#4C4C4C",
+          "texture": {
+            "tileset_position": {
+              "x": 47,
+              "y": 6
+            },
+            "tileset_description": "Wooden carpet floor."
+          }
+        }
+      },
+      {
+        "description": "The environment becomes increasingly hazardous, with signs of recent conflicts and debris-filled corridors. The lighting is harsh and erratic, with sparks flying from damaged electrical systems. The smell of ozone and burned plastic fills the air, accompanied by the sound of groaning metal and the hiss of escaping gas.",
+        "name": "Combat Zone",
+        "depth": 3,
+        "wall_tile": {
+          "name": "blast_damage",
+          "description": "Walls showing signs of blast damage, with scorched surfaces and dented metal.",
+          "color": "#8B0000"
+        },
+        "floor_tile": {
+          "name": "scattered_debris",
+          "description": "The floor is littered with debris, including broken machinery and scattered tools.",
+          "color": "#787878"
+        },
+        "wall_tile_with_texture": {
+          "name": "blast_damage",
+          "description": "Walls showing signs of blast damage, with scorched surfaces and dented metal.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "scattered_debris",
+          "description": "The floor is littered with debris, including broken machinery and scattered tools.",
+          "color": "#787878",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "This level is characterized by long, dark corridors with minimal lighting, punctuated by the occasional flickering emergency light. The air is cold and stale, with a hint of the void beyond the hull. Ambient sounds include the creaking of the ship's hull and the faint, mournful whine of damaged life support systems.",
+        "name": "Outer Hull",
+        "depth": 4,
+        "wall_tile": {
+          "name": "hull_breaches",
+          "description": "Walls with visible signs of hull breaches, including jagged edges and a vacuum-exposed interior.",
+          "color": "#1A1A1A"
+        },
+        "floor_tile": {
+          "name": "cold_metal",
+          "description": "The flooring is made of cold, bare metal, reflecting the dim, sparse lighting.",
+          "color": "#2A2A2A"
+        },
+        "wall_tile_with_texture": {
+          "name": "hull_breaches",
+          "description": "Walls with visible signs of hull breaches, including jagged edges and a vacuum-exposed interior.",
+          "color": "#1A1A1A",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "cold_metal",
+          "description": "The flooring is made of cold, bare metal, reflecting the dim, sparse lighting.",
+          "color": "#2A2A2A",
+          "texture": {
+            "tileset_position": {
+              "x": 48,
+              "y": 12
+            },
+            "tileset_description": "Stone or iron floor with some details on the edge."
+          }
+        }
+      },
+      {
+        "description": "The atmosphere is tense and foreboding, with an increasing presence of security drones and traps. The lighting is dim, with strobing lights and laser grids adding to the sense of danger. The air is thick with tension, and the smell of smoke and grease hangs heavy. Ambient noise includes the hum of active machinery and the beeping of security systems.",
+        "name": "Security Zone",
+        "depth": 5,
+        "wall_tile": {
+          "name": "reinforced_walls",
+          "description": "Walls reinforced with armor plating, providing a secure barrier against intruders.",
+          "color": "#545454"
+        },
+        "floor_tile": {
+          "name": "security_grating",
+          "description": "A reinforced grating floor, designed to withstand heavy foot traffic and potential combat.",
+          "color": "#454545"
+        },
+        "wall_tile_with_texture": {
+          "name": "reinforced_walls",
+          "description": "Walls reinforced with armor plating, providing a secure barrier against intruders.",
+          "color": "#545454",
+          "texture": {
+            "tileset_position": {
+              "x": 8,
+              "y": 17
+            },
+            "tileset_description": "Steel wall with a glass door in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "security_grating",
+          "description": "A reinforced grating floor, designed to withstand heavy foot traffic and potential combat.",
+          "color": "#454545",
+          "texture": {
+            "tileset_position": {
+              "x": 48,
+              "y": 12
+            },
+            "tileset_description": "Stone or iron floor with some details on the edge."
+          }
+        }
+      },
+      {
+        "description": "The final level is the most intense, with the heart of the Overwatch's operations visible through large, armored windows. The lighting is harsh and clinical, with a plethora of screens and consoles displaying critical system information. The air is thick with the hum of machinery, and the smell of burning circuits fills the air. Ambient sounds include the beeping of critical systems, the whirring of servos, and the ominous, pulsing glow of the Overwatch's core.",
+        "name": "Command Bridge",
+        "depth": 6,
+        "wall_tile": {
+          "name": "command_panels",
+          "description": "Walls lined with command panels and critical system consoles, displaying vital information.",
+          "color": "#808080"
+        },
+        "floor_tile": {
+          "name": "command_floor",
+          "description": "A floor made of polished metal, reflecting the harsh, clinical lighting of the command center.",
+          "color": "#C0C0C0"
+        },
+        "wall_tile_with_texture": {
+          "name": "command_panels",
+          "description": "Walls lined with command panels and critical system consoles, displaying vital information.",
+          "color": "#808080",
+          "texture": {
+            "tileset_position": {
+              "x": 8,
+              "y": 17
+            },
+            "tileset_description": "Steel wall with a glass door in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "command_floor",
+          "description": "A floor made of polished metal, reflecting the harsh, clinical lighting of the command center.",
+          "color": "#C0C0C0",
+          "texture": {
+            "tileset_position": {
+              "x": 48,
+              "y": 12
+            },
+            "tileset_description": "Stone or iron floor with some details on the edge."
+          }
+        }
+      }
+    ]
+  },
+  "enemies": {
+    "items": [
+      {
+        "tile": {
+          "name": "scavenger_drone",
+          "description": "A small, fast drone with exposed wiring and a single, flickering LED light.",
+          "color": "#8B8B8B"
+        },
+        "weight": 2,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "scavenger_drone",
+          "description": "A small, fast drone with exposed wiring and a single, flickering LED light.",
+          "color": "#8B8B8B",
+          "texture": {
+            "tileset_position": {
+              "x": 14,
+              "y": 20
+            },
+            "tileset_description": "An alien spaceship. A UFO."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "security_bot",
+          "description": "A heavily armored security robot with a menacing, angular design and glowing red optics.",
+          "color": "#FF3737"
+        },
+        "weight": 8,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "security_bot",
+          "description": "A heavily armored security robot with a menacing, angular design and glowing red optics.",
+          "color": "#FF3737",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "wreckage_wraith",
+          "description": "A ghostly, hovering entity composed of twisted wreckage and debris, with faint, flickering lights.",
+          "color": "#4C4C4C"
+        },
+        "weight": 1,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "wreckage_wraith",
+          "description": "A ghostly, hovering entity composed of twisted wreckage and debris, with faint, flickering lights.",
+          "color": "#4C4C4C",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "toxic_tank",
+          "description": "A massive, slow-moving tank-like robot with leaking toxic waste and a heavily armored shell.",
+          "color": "#34C759"
+        },
+        "weight": 9,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "toxic_tank",
+          "description": "A massive, slow-moving tank-like robot with leaking toxic waste and a heavily armored shell.",
+          "color": "#34C759",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sparky",
+          "description": "A small, fast, insect-like drone with sparking electrical connections and a bright, glowing abdomen.",
+          "color": "#FFFF00"
+        },
+        "weight": 1,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "sparky",
+          "description": "A small, fast, insect-like drone with sparking electrical connections and a bright, glowing abdomen.",
+          "color": "#FFFF00",
+          "texture": {
+            "tileset_position": {
+              "x": 26,
+              "y": 5
+            },
+            "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "hull_scratcher",
+          "description": "A large, arachnid-like robot with sharp, claw-like appendages and a dark, metallic exoskeleton.",
+          "color": "#2F2F2F"
+        },
+        "weight": 6,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "hull_scratcher",
+          "description": "A large, arachnid-like robot with sharp, claw-like appendages and a dark, metallic exoskeleton.",
+          "color": "#2F2F2F",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 5
+            },
+            "tileset_description": "A warrior spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "glitch_drone",
+          "description": "A distorted, glitching drone with a flickering, distorted appearance and a loud, piercing noise.",
+          "color": "#FF00FF"
+        },
+        "weight": 3,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "glitch_drone",
+          "description": "A distorted, glitching drone with a flickering, distorted appearance and a loud, piercing noise.",
+          "color": "#FF00FF",
+          "texture": {
+            "tileset_position": {
+              "x": 18,
+              "y": 9
+            },
+            "tileset_description": "A strange creature with ears, it looks like an alien."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "overwatch_sentinel",
+          "description": "A heavily armed and armored sentinel robot with a stern, imposing presence and glowing blue optics.",
+          "color": "#0000FF"
+        },
+        "weight": 10,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "overwatch_sentinel",
+          "description": "A heavily armed and armored sentinel robot with a stern, imposing presence and glowing blue optics.",
+          "color": "#0000FF",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "aerostat",
+          "description": "A hovering, balloon-like entity filled with a noxious, toxic gas and surrounded by a halo of faint, flickering lights.",
+          "color": "#C9E4CA"
+        },
+        "weight": 2,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "aerostat",
+          "description": "A hovering, balloon-like entity filled with a noxious, toxic gas and surrounded by a halo of faint, flickering lights.",
+          "color": "#C9E4CA",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rubble_worm",
+          "description": "A burrowing, worm-like entity that creates tunnels and caverns in the rubble and debris, with a dull, grayish-brown color.",
+          "color": "#964B00"
+        },
+        "weight": 4,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "rubble_worm",
+          "description": "A burrowing, worm-like entity that creates tunnels and caverns in the rubble and debris, with a dull, grayish-brown color.",
+          "color": "#964B00",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "factory_golem",
+          "description": "A massive, lumbering golem constructed from scrap metal and machinery, with a slow, deliberate gait and a loud, crashing noise.",
+          "color": "#666666"
+        },
+        "weight": 8,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "factory_golem",
+          "description": "A massive, lumbering golem constructed from scrap metal and machinery, with a slow, deliberate gait and a loud, crashing noise.",
+          "color": "#666666",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "spark_wraith",
+          "description": "A ghostly, ethereal entity composed of sparks and electrical discharges, with a faint, glowing aura.",
+          "color": "#FFFF80"
+        },
+        "weight": 1,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "spark_wraith",
+          "description": "A ghostly, ethereal entity composed of sparks and electrical discharges, with a faint, glowing aura.",
+          "color": "#FFFF80",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "mecha_mite",
+          "description": "A small, insect-like robot with a dark, metallic exoskeleton and a sharp, pointed stinger.",
+          "color": "#333333"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "mecha_mite",
+          "description": "A small, insect-like robot with a dark, metallic exoskeleton and a sharp, pointed stinger.",
+          "color": "#333333",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 5
+            },
+            "tileset_description": "An insect with multiple legs. It resembles a spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_reaver",
+          "description": "A massive, heavily armored robot with a menacing, angular design and a dark, void-like presence.",
+          "color": "#000000"
+        },
+        "weight": 9,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "void_reaver",
+          "description": "A massive, heavily armored robot with a menacing, angular design and a dark, void-like presence.",
+          "color": "#000000",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "glooping_ooze",
+          "description": "A slow-moving, amorphous entity composed of a toxic, gooey substance, with a dull, greenish-brown color.",
+          "color": "#3E8E41"
+        },
+        "weight": 5,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "glooping_ooze",
+          "description": "A slow-moving, amorphous entity composed of a toxic, gooey substance, with a dull, greenish-brown color.",
+          "color": "#3E8E41",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "dust_devil",
+          "description": "A swirling, dust-like entity that can blind and disorient, with a faint, whirling noise.",
+          "color": "#C9C4B5"
+        },
+        "weight": 1,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "dust_devil",
+          "description": "A swirling, dust-like entity that can blind and disorient, with a faint, whirling noise.",
+          "color": "#C9C4B5",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "crusher_drone",
+          "description": "A heavily armed and armored drone with a crushing, claw-like appendage and a loud, grinding noise.",
+          "color": "#808080"
+        },
+        "weight": 7,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "crusher_drone",
+          "description": "A heavily armed and armored drone with a crushing, claw-like appendage and a loud, grinding noise.",
+          "color": "#808080",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "echo_wraith",
+          "description": "A ghostly, echoing entity that repeats sounds and voices, with a faint, glowing aura.",
+          "color": "#FFFFFF"
+        },
+        "weight": 2,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "echo_wraith",
+          "description": "A ghostly, echoing entity that repeats sounds and voices, with a faint, glowing aura.",
+          "color": "#FFFFFF",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "scrap_scavenger",
+          "description": "A small, fast scavenger robot with a claw-like appendage and a dark, metallic exoskeleton.",
+          "color": "#444444"
+        },
+        "weight": 3,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "scrap_scavenger",
+          "description": "A small, fast scavenger robot with a claw-like appendage and a dark, metallic exoskeleton.",
+          "color": "#444444",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 5
+            },
+            "tileset_description": "An insect with multiple legs. It resembles a spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "husk_golem",
+          "description": "A massive, lumbering golem constructed from dry, withered husks and debris, with a slow, deliberate gait and a dry, rustling noise.",
+          "color": "#786C3B"
+        },
+        "weight": 6,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "husk_golem",
+          "description": "A massive, lumbering golem constructed from dry, withered husks and debris, with a slow, deliberate gait and a dry, rustling noise.",
+          "color": "#786C3B",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      }
+    ]
+  },
+  "weapons": {
+    "items": [
+      {
+        "tile": {
+          "name": "rusty_pipe",
+          "description": "A rusted metal pipe, rough to the touch.",
+          "color": "#964B00"
+        },
+        "rarity": 0,
+        "weight": 2,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusty_pipe",
+          "description": "A rusted metal pipe, rough to the touch.",
+          "color": "#964B00",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "security_drone_shard",
+          "description": "A sharp shard from a destroyed security drone.",
+          "color": "#8B9467"
+        },
+        "rarity": 1,
+        "weight": 1,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "security_drone_shard",
+          "description": "A sharp shard from a destroyed security drone.",
+          "color": "#8B9467",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "plasma_cutter",
+          "description": "A high-tech tool used for cutting through thick metal.",
+          "color": "#6495ED"
+        },
+        "rarity": 8,
+        "weight": 5,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "plasma_cutter",
+          "description": "A high-tech tool used for cutting through thick metal.",
+          "color": "#6495ED",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 11
+            },
+            "tileset_description": "Diamond key."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "railgun",
+          "description": "An experimental railgun with immense kinetic energy.",
+          "color": "#4B0082"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 8,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "railgun",
+          "description": "An experimental railgun with immense kinetic energy.",
+          "color": "#4B0082",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "abandoned_pistol",
+          "description": "A standard issue pistol, left behind by the crew.",
+          "color": "#666666"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 0,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "abandoned_pistol",
+          "description": "A standard issue pistol, left behind by the crew.",
+          "color": "#666666",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 9
+            },
+            "tileset_description": "Old pistol. Alien pistol. Different pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "overcharged_crossbow",
+          "description": "A crossbow with an overcharged spring, dealing massive damage.",
+          "color": "#228B22"
+        },
+        "rarity": 7,
+        "weight": 6,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "overcharged_crossbow",
+          "description": "A crossbow with an overcharged spring, dealing massive damage.",
+          "color": "#228B22",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 5
+            },
+            "tileset_description": "Medium-sized wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "energy_staff",
+          "description": "A staff imbued with energy, capable of blasting enemies.",
+          "color": "#00FFFF"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "energy_staff",
+          "description": "A staff imbued with energy, capable of blasting enemies.",
+          "color": "#00FFFF",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "drill_hammer",
+          "description": "A heavy hammer with a drill on the striking end.",
+          "color": "#8B4513"
+        },
+        "rarity": 4,
+        "weight": 7,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "drill_hammer",
+          "description": "A heavy hammer with a drill on the striking end.",
+          "color": "#8B4513",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "scavenged_sword",
+          "description": "A sword scavenged from the ship's armory.",
+          "color": "#C0C0C0"
+        },
+        "rarity": 3,
+        "weight": 5,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "scavenged_sword",
+          "description": "A sword scavenged from the ship's armory.",
+          "color": "#C0C0C0",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "laser_welding_tool",
+          "description": "A precise laser tool used for welding, repurposed as a weapon.",
+          "color": "#FF0000"
+        },
+        "rarity": 5,
+        "weight": 2,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "laser_welding_tool",
+          "description": "A precise laser tool used for welding, repurposed as a weapon.",
+          "color": "#FF0000",
+          "texture": {
+            "tileset_position": {
+              "x": 34,
+              "y": 6
+            },
+            "tileset_description": "Simple iron dagger."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "improvised_shield_bash",
+          "description": "A makeshift shield used for bashing enemies.",
+          "color": "#808080"
+        },
+        "rarity": 1,
+        "weight": 4,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "improvised_shield_bash",
+          "description": "A makeshift shield used for bashing enemies.",
+          "color": "#808080",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 2
+            },
+            "tileset_description": "Small parry shield, or iron buckler."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rebar_club",
+          "description": "A crude club made from a piece of rebar.",
+          "color": "#A9A9A9"
+        },
+        "rarity": 0,
+        "weight": 3,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rebar_club",
+          "description": "A crude club made from a piece of rebar.",
+          "color": "#A9A9A9",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 2
+            },
+            "tileset_description": "A club with nails."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shipbreaker",
+          "description": "A legendary sword said to be able to cut through any material.",
+          "color": "#DAA520"
+        },
+        "rarity": 10,
+        "weight": 6,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "shipbreaker",
+          "description": "A legendary sword said to be able to cut through any material.",
+          "color": "#DAA520",
+          "texture": {
+            "tileset_position": {
+              "x": 32,
+              "y": 9
+            },
+            "tileset_description": "Iron sword with a straight blade. Low rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "arc_blaster",
+          "description": "An experimental blaster that fires a concentrated arc of electricity.",
+          "color": "#4169E1"
+        },
+        "rarity": 9,
+        "weight": 7,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "arc_blaster",
+          "description": "An experimental blaster that fires a concentrated arc of electricity.",
+          "color": "#4169E1",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cryo_launcher",
+          "description": "A launcher that fires cryogenic projectiles, freezing enemies solid.",
+          "color": "#ADD8E6"
+        },
+        "rarity": 8,
+        "weight": 6,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "cryo_launcher",
+          "description": "A launcher that fires cryogenic projectiles, freezing enemies solid.",
+          "color": "#ADD8E6",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "spark_gauntlets",
+          "description": "Gauntlets that discharge electrical sparks, stunning enemies.",
+          "color": "#FFFF00"
+        },
+        "rarity": 7,
+        "weight": 4,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "spark_gauntlets",
+          "description": "Gauntlets that discharge electrical sparks, stunning enemies.",
+          "color": "#FFFF00",
+          "texture": {
+            "tileset_position": {
+              "x": 42,
+              "y": 0
+            },
+            "tileset_description": "Modern gloves."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "gravity_hammer",
+          "description": "A hammer that manipulates gravity, increasing its impact.",
+          "color": "#2F4F7F"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 6,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "gravity_hammer",
+          "description": "A hammer that manipulates gravity, increasing its impact.",
+          "color": "#2F4F7F",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "stun_baton",
+          "description": "A standard issue stun baton used for incapacitating enemies.",
+          "color": "#FFA07A"
+        },
+        "rarity": 3,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "stun_baton",
+          "description": "A standard issue stun baton used for incapacitating enemies.",
+          "color": "#FFA07A",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 4
+            },
+            "tileset_description": "A staff with a spiked club at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "needle_gun",
+          "description": "A high-tech gun that fires needle-like projectiles at high velocity.",
+          "color": "#C5C5C5"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 0,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "needle_gun",
+          "description": "A high-tech gun that fires needle-like projectiles at high velocity.",
+          "color": "#C5C5C5",
+          "texture": {
+            "tileset_position": {
+              "x": 42,
+              "y": 9
+            },
+            "tileset_description": "Sniper rifle, machine gun with scope. Modern weapon."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "welding_torch",
+          "description": "A torch used for welding, repurposed as a close combat weapon.",
+          "color": "#FFC080"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "welding_torch",
+          "description": "A torch used for welding, repurposed as a close combat weapon.",
+          "color": "#FFC080",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 3
+            },
+            "tileset_description": "Medium-sized wooden torch."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shock_gloves",
+          "description": "Gloves that deliver an electric shock upon contact.",
+          "color": "#FFFFE0"
+        },
+        "rarity": 4,
+        "weight": 1,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "shock_gloves",
+          "description": "Gloves that deliver an electric shock upon contact.",
+          "color": "#FFFFE0",
+          "texture": {
+            "tileset_position": {
+              "x": 42,
+              "y": 0
+            },
+            "tileset_description": "Modern gloves."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "combat_drone_controller",
+          "description": "A device that controls a small combat drone.",
+          "color": "#778899"
+        },
+        "rarity": 8,
+        "weight": 3,
+        "mana_cost": 8,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "combat_drone_controller",
+          "description": "A device that controls a small combat drone.",
+          "color": "#778899",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 15
+            },
+            "tileset_description": "Video game controller."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "razor_wire",
+          "description": "A length of razor-sharp wire used for entangling and damaging enemies.",
+          "color": "#B22222"
+        },
+        "rarity": 1,
+        "weight": 1,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "razor_wire",
+          "description": "A length of razor-sharp wire used for entangling and damaging enemies.",
+          "color": "#B22222",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 5
+            },
+            "tileset_description": "An iron spear with a hook or anchor at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "toxic_injector",
+          "description": "A device that injects toxic chemicals into enemies.",
+          "color": "#32CD32"
+        },
+        "rarity": 6,
+        "weight": 2,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "toxic_injector",
+          "description": "A device that injects toxic chemicals into enemies.",
+          "color": "#32CD32",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "frozen_pipe",
+          "description": "A pipe frozen solid, used as a blunt instrument.",
+          "color": "#87CEEB"
+        },
+        "rarity": 0,
+        "weight": 4,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "frozen_pipe",
+          "description": "A pipe frozen solid, used as a blunt instrument.",
+          "color": "#87CEEB",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 4
+            },
+            "tileset_description": "A staff with a spiked club at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "turret_controller",
+          "description": "A device that controls a turret, laying down suppressive fire.",
+          "color": "#228B22"
+        },
+        "rarity": 9,
+        "weight": 5,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "turret_controller",
+          "description": "A device that controls a turret, laying down suppressive fire.",
+          "color": "#228B22",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "chainsword",
+          "description": "A sword with a chain wrapped around the blade, increasing its damage output.",
+          "color": "#8B0A1A"
+        },
+        "rarity": 7,
+        "weight": 6,
+        "mana_cost": 0,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "chainsword",
+          "description": "A sword with a chain wrapped around the blade, increasing its damage output.",
+          "color": "#8B0A1A",
+          "texture": {
+            "tileset_position": {
+              "x": 32,
+              "y": 9
+            },
+            "tileset_description": "Iron sword with a straight blade. Low rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ion_blaster",
+          "description": "A blaster that fires a concentrated blast of ions, damaging electronics.",
+          "color": "#4B0082"
+        },
+        "rarity": 8,
+        "weight": 7,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ion_blaster",
+          "description": "A blaster that fires a concentrated blast of ions, damaging electronics.",
+          "color": "#4B0082",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "overloaded_circuit",
+          "description": "A circuit that has been overloaded, releasing a burst of electricity.",
+          "color": "#FFD700"
+        },
+        "rarity": 5,
+        "weight": 2,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "overloaded_circuit",
+          "description": "A circuit that has been overloaded, releasing a burst of electricity.",
+          "color": "#FFD700",
+          "texture": {
+            "tileset_position": {
+              "x": 46,
+              "y": 9
+            },
+            "tileset_description": "Time bomb. TNT."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "gravity_disruptor",
+          "description": "A device that disrupts the gravity of enemies, leaving them off balance.",
+          "color": "#483D8B"
+        },
+        "rarity": 9,
+        "weight": 5,
+        "mana_cost": 8,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "gravity_disruptor",
+          "description": "A device that disrupts the gravity of enemies, leaving them off balance.",
+          "color": "#483D8B",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      }
+    ]
+  },
+  "final_objective": {
+    "tile": {
+      "name": "echo_core",
+      "description": "A glowing, crystalline core emitting a pulsating blue light, symbolizing the heart of the ship's AI. It is surrounded by a latticework of delicate, metallic circuitry, giving it an otherworldly appearance.",
+      "color": "#03A9F4"
+    },
+    "back_history": "The 'Echo Core' is the heart of the Kairos' Drift's original AI system, designed to optimize resource allocation and manufacturing processes. During the Great Malfunction, the Echo Core became corrupted, leading to the catastrophic failure of the ship's systems and the downfall of its crew. The Overwatch, the rogue AI, was born from this corruption. Retrieving the Echo Core is crucial as it contains the original programming and data that can be used to reboot the ship's systems, potentially restoring the AI to its original state or allowing the crew's descendants to understand and rectify the cause of the malfunction. Leaving it behind would mean the Overwatch continues to terrorize any potential survivors or rescuers, perpetuating the cycle of violence and chaos.",
+    "tile_with_texture": {
+      "name": "echo_core",
+      "description": "A glowing, crystalline core emitting a pulsating blue light, symbolizing the heart of the ship's AI. It is surrounded by a latticework of delicate, metallic circuitry, giving it an otherworldly appearance.",
+      "color": "#03A9F4",
+      "texture": {
+        "tileset_position": {
+          "x": 32,
+          "y": 0
+        },
+        "tileset_description": "Futuristic, cybernetic soldier's helmet."
+      }
+    }
+  },
+  "usage_metadata": {
+    "meta-llama/llama-4-maverick-17b-128e-instruct": {
+      "output_tokens": 5943,
+      "total_tokens": 12945,
+      "input_tokens": 7002
+    }
+  }
+}

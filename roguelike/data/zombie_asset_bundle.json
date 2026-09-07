@@ -1,0 +1,1494 @@
+{
+  "name": "The Blighted Expanse: Confluence Rift",
+  "raw_description": "\nCreate a roguelike with the theme as zombie pos apocalyptic world.\n",
+  "description": "**1. The Setting Name**  \n**“The Blighted Expanse”**\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n*Art Direction*: Gritty, post‑industrial horror with a muted, desaturated palette punctuated by sickly greens and rust‑orange glows. Crumbling concrete, twisted steel, and overgrown vegetation clash in every frame. Hand‑drawn textures give the world a lived‑in, weather‑worn feel, while occasional splashes of hyper‑realistic gore emphasize the visceral threat of the undead.\n\n*Lighting*: Perpetual twilight—sunlight filtered through thick, ash‑laden clouds that never fully break. Flickering fluorescent tubes sputter in abandoned warehouses, casting strobe‑like shadows. In underground tunnels, the only illumination comes from the player’s dim lantern, the occasional glowing fungus, or the eerie phosphorescence of mutated insects.\n\n*Weather*: A constant, low‑frequency drizzle that turns streets into slick, reflective mirrors. Occasional acid rain corrodes metal and burns away fresh paint, leaving blackened, pitted surfaces. Wind whistles through broken windows, carrying the distant moan of the dead.\n\n*Ambient Noise*: A layered soundscape of distant groans, the metallic clank of rusted machinery, the soft patter of rain, and the occasional crack of a collapsing structure. In the deeper levels, the low hum of dormant generators and the unsettling skitter of unseen vermin add tension. The soundtrack is minimalist—ambient drones punctuated by sharp, percussive hits when danger looms.\n\n---\n\n**3. The Lore**  \n\nDecades ago, the world’s megacities were powered by the **Helios Nexus**, a network of experimental fusion reactors that drew energy from the planet’s own magnetic field. The Nexus promised limitless clean power, but its core relied on a volatile, bio‑engineered catalyst—**the Viridian Strain**—designed to self‑replicate and amplify the reaction.\n\nA sabotage‑driven cascade, later known as **The Shatter**, caused a massive overload. The reactors detonated in a chain reaction, spewing a cloud of ionized radiation mixed with the Viridian Strain across the continent. The blast shattered the sky, leaving a permanent veil of ash and a lingering electromagnetic storm.\n\nThe Viridian Strain mutated the dead, reanimating corpses with a hive‑mind intelligence that seeks to assimilate any living tissue. The storm’s interference corrupted the remaining technology, turning once‑bright neon signs into flickering warnings and rendering most communications dead. Survivors fled into the ruins, forming scattered enclaves, but the infected swarmed the streets, turning the entire urban sprawl into a nightmarish wasteland.\n\nThe Blighted Expanse is the scarred heart of this disaster: a megacity that was the original hub of the Helios Nexus, now a labyrinth of collapsed skyscrapers, flooded subways, and overrun research facilities. The environment itself is still poisoned; the air is thick with ionized particles that cause hallucinations and degrade equipment over time.\n\n---\n\n**4. The Core Conflict**  \n\nAt the center of the Expanse lies **The Core Sanctum**, the still‑pulsing heart of the original Helios Nexus. Though the main reactors are dead, a fragment of the Viridian Strain has fused with the reactor’s AI, creating a sentient, self‑preserving entity known as **The Confluence**.  \n\nThe Confluence broadcasts a psychic resonance that compels the infected to converge on its location, constantly expanding its influence. It also emits a field that warps reality—distorting space, spawning anomalous mutations, and corrupting technology.  \n\nPlayers are thrust into the role of **Rogue Salvagers**—individuals who have either been exiled, volunteered, or forced out of their enclaves to infiltrate the Expanse. Their mission is threefold:\n\n1. **Survive** the relentless waves of infected, each bearing the adaptive traits of the Viridian Strain.  \n2. **Uncover** fragments of lost data scattered throughout the ruins to understand how to sever the Confluence’s psychic link.  \n3. **Disable or Destroy** the Core Sanctum, risking a second cascade that could either cleanse the area or unleash an even greater cataclysm.\n\nThe conflict is both external—fighting hordes of ever‑evolving zombies and corrupted automatons—and internal, as the lingering radiation and psychic whispers erode sanity, forcing players to make desperate choices between humanity, power, and survival.",
+  "player": {
+    "tile": {
+      "name": "rogue_salvager",
+      "description": "A grim, scarred survivor clad in patched, rust‑stained armor, wielding a makeshift plasma cutter and a flickering lantern that casts eerie shadows. Their visor glows faintly with a sickly green HUD, and a bio‑etched tattoo of a broken helix pulses along their forearm, marking them as a former Nexus technician turned rogue salvager.",
+      "color": "#4B3A2F"
+    },
+    "back_history": "Born in the lower tiers of the megacity, I was a junior systems engineer for the Helios Nexus, responsible for maintaining the delicate balance of the Viridian Strain catalysts. When the Shatter erupted, I survived the blast by sheer luck, but the radiation fused the catalyst to my neural implants, granting me a painful, constant psychic echo of the Confluence. Branded as a liability, I was exiled from the survivor enclave. Driven by a desperate need for redemption and a burning desire to sever the Confluence's psychic leash—so no other soul suffers my cursed link—I now scour the Blighted Expanse as a rogue salvager. Armed with salvaged tech, a makeshift plasma cutter, and a lantern that pierces the perpetual twilight, I seek the Core Sanctum to end the nightmare, even if it means sacrificing what remains of my own humanity.",
+    "tile_with_texture": {
+      "name": "rogue_salvager",
+      "description": "A grim, scarred survivor clad in patched, rust‑stained armor, wielding a makeshift plasma cutter and a flickering lantern that casts eerie shadows. Their visor glows faintly with a sickly green HUD, and a bio‑etched tattoo of a broken helix pulses along their forearm, marking them as a former Nexus technician turned rogue salvager.",
+      "color": "#4B3A2F",
+      "texture": {
+        "tileset_position": { "x": 29, "y": 9 },
+        "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+      }
+    }
+  },
+  "dungeon_levels": {
+    "items": [
+      {
+        "description": "The ruined surface streets of the Blighted Expanse, slick with a perpetual drizzle. Flickering neon signs sputter over cracked pavement, while ash‑laden clouds mute the twilight. The air smells of rust and wet concrete, and distant groans echo through abandoned storefronts.",
+        "name": "The Ashen Outskirts",
+        "depth": 1,
+        "wall_tile": {
+          "name": "cracked_metal_fence",
+          "description": "Corroded rebar and twisted steel panels that line the street corridors, pitted by acid rain.",
+          "color": "#6e4a3c"
+        },
+        "floor_tile": {
+          "name": "rain_slick_concrete",
+          "description": "Wet concrete slick with ash‑laden rain, reflecting the dim, flickering lights.",
+          "color": "#4b4b4b"
+        },
+        "wall_tile_with_texture": {
+          "name": "cracked_metal_fence",
+          "description": "Corroded rebar and twisted steel panels that line the street corridors, pitted by acid rain.",
+          "color": "#6e4a3c",
+          "texture": {
+            "tileset_position": { "x": 6, "y": 3 },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "rain_slick_concrete",
+          "description": "Wet concrete slick with ash‑laden rain, reflecting the dim, flickering lights.",
+          "color": "#4b4b4b",
+          "texture": {
+            "tileset_position": { "x": 11, "y": 1 },
+            "tileset_description": "A muddy floor."
+          }
+        }
+      },
+      {
+        "description": "A once‑bustling market now choked by debris and overgrown vines. Broken stalls cast long shadows under strobe‑like fluorescent tubes, and the scent of burnt plastic mixes with mildew. The hum of dying generators provides a low, uneasy backdrop.",
+        "name": "The Derelict Market",
+        "depth": 2,
+        "wall_tile": {
+          "name": "shattered_glass_walls",
+          "description": "Jagged panes of broken glass set in rusted frames, reflecting the sickly green glow of mutated fungi.",
+          "color": "#7b7b7b"
+        },
+        "floor_tile": {
+          "name": "debris_streets",
+          "description": "A patchwork of broken tiles, twisted metal, and wilted vegetation under a thin film of water.",
+          "color": "#5a5a5a"
+        },
+        "wall_tile_with_texture": {
+          "name": "shattered_glass_walls",
+          "description": "Jagged panes of broken glass set in rusted frames, reflecting the sickly green glow of mutated fungi.",
+          "color": "#7b7b7b",
+          "texture": {
+            "tileset_position": { "x": 2, "y": 13 },
+            "tileset_description": "Broken stone brick wall with a glass window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "debris_streets",
+          "description": "A patchwork of broken tiles, twisted metal, and wilted vegetation under a thin film of water.",
+          "color": "#5a5a5a",
+          "texture": {
+            "tileset_position": { "x": 14, "y": 5 },
+            "tileset_description": "A puddle of water."
+          }
+        }
+      },
+      {
+        "description": "Flooded subway tunnels echo with the drip of acid rain and the distant clank of rusted rails. Phosphorescent fungus clings to walls, casting an eerie green luminescence. The scent is a mix of ozone, damp earth, and stale decay.",
+        "name": "The Subterranean Transit",
+        "depth": 3,
+        "wall_tile": {
+          "name": "rusted_pipe_wall",
+          "description": "Massive steel pipes corroded by radiation, their interiors pulsing with faint, sickly light.",
+          "color": "#3f2e2e"
+        },
+        "floor_tile": {
+          "name": "fungal_mold_floor",
+          "description": "Spongy, bioluminescent mold covering the tracks, giving the floor a soft, unsettling glow.",
+          "color": "#2a3f2a"
+        },
+        "wall_tile_with_texture": {
+          "name": "rusted_pipe_wall",
+          "description": "Massive steel pipes corroded by radiation, their interiors pulsing with faint, sickly light.",
+          "color": "#3f2e2e",
+          "texture": {
+            "tileset_position": { "x": 6, "y": 3 },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "fungal_mold_floor",
+          "description": "Spongy, bioluminescent mold covering the tracks, giving the floor a soft, unsettling glow.",
+          "color": "#2a3f2a",
+          "texture": {
+            "tileset_position": { "x": 11, "y": 1 },
+            "tileset_description": "A muddy floor."
+          }
+        }
+      },
+      {
+        "description": "Abandoned labs where the Helios Nexus was studied. Flickering holo‑displays sputter corrupted data, while the air is thick with the acrid bite of chemical residues and the metallic tang of irradiated metal.",
+        "name": "The Research Annex",
+        "depth": 4,
+        "wall_tile": {
+          "name": "biohazard_plate",
+          "description": "Heavy plating marked with faded bio‑hazard symbols, etched with the remnants of failed experiments.",
+          "color": "#4b8b3a"
+        },
+        "floor_tile": {
+          "name": "contaminated_lab_floor",
+          "description": "Stained steel grating slick with a thin film of radioactive sludge.",
+          "color": "#3c3c2a"
+        },
+        "wall_tile_with_texture": {
+          "name": "biohazard_plate",
+          "description": "Heavy plating marked with faded bio‑hazard symbols, etched with the remnants of failed experiments.",
+          "color": "#4b8b3a",
+          "texture": {
+            "tileset_position": { "x": 6, "y": 3 },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "contaminated_lab_floor",
+          "description": "Stained steel grating slick with a thin film of radioactive sludge.",
+          "color": "#3c3c2a",
+          "texture": {
+            "tileset_position": { "x": 6, "y": 3 },
+            "tileset_description": "Broken iron railings."
+          }
+        }
+      },
+      {
+        "description": "A network of cavernous chambers where the Viridian Strain has fused with the reactor AI. The walls pulse with a living green energy, and the air hums with a low psychic resonance that gnaws at sanity.",
+        "name": "The Confluence Veins",
+        "depth": 5,
+        "wall_tile": {
+          "name": "pulsing_energy_barrier",
+          "description": "Translucent barriers of volatile energy that crackle with an unsettling, organic glow.",
+          "color": "#1f7a1f"
+        },
+        "floor_tile": {
+          "name": "mutated_organic_slime",
+          "description": "Viscous, semi‑solid slime that shifts underfoot, exuding a sour, metallic odor.",
+          "color": "#2a7b2a"
+        },
+        "wall_tile_with_texture": {
+          "name": "pulsing_energy_barrier",
+          "description": "Translucent barriers of volatile energy that crackle with an unsettling, organic glow.",
+          "color": "#1f7a1f",
+          "texture": {
+            "tileset_position": { "x": 5, "y": 16 },
+            "tileset_description": "A stone arch. Almost a passageway to some hidden corner."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "mutated_organic_slime",
+          "description": "Viscous, semi‑solid slime that shifts underfoot, exuding a sour, metallic odor.",
+          "color": "#2a7b2a",
+          "texture": {
+            "tileset_position": { "x": 11, "y": 1 },
+            "tileset_description": "A muddy floor."
+          }
+        }
+      },
+      {
+        "description": "The heart of the Helios Nexus, where The Confluence resides. The chamber is bathed in a harsh, crimson light from the dying reactor core, and the oppressive heat mixes with the smell of burning circuitry and ionized ash.",
+        "name": "The Core Sanctum",
+        "depth": 6,
+        "wall_tile": {
+          "name": "corrupted_ai_hull",
+          "description": "Jagged hull plating fused with alien circuitry, constantly reconfiguring its shape.",
+          "color": "#2a2a2a"
+        },
+        "floor_tile": {
+          "name": "reactor_core_floor",
+          "description": "Charred alloy plating cracked open, exposing molten veins of viridian energy.",
+          "color": "#8b0000"
+        },
+        "wall_tile_with_texture": {
+          "name": "corrupted_ai_hull",
+          "description": "Jagged hull plating fused with alien circuitry, constantly reconfiguring its shape.",
+          "color": "#2a2a2a",
+          "texture": {
+            "tileset_position": { "x": 8, "y": 14 },
+            "tileset_description": "Futuristic machine."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "reactor_core_floor",
+          "description": "Charred alloy plating cracked open, exposing molten veins of viridian energy.",
+          "color": "#8b0000",
+          "texture": {
+            "tileset_position": { "x": 11, "y": 6 },
+            "tileset_description": "A open metal wooden chest."
+          }
+        }
+      }
+    ]
+  },
+  "enemies": {
+    "items": [
+      {
+        "tile": {
+          "name": "rotting_fodder_1",
+          "description": "A decayed corpse covered in fungal pustules, shuffling forward in a mindless horde.",
+          "color": "#4B3A2D"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "rotting_fodder_1",
+          "description": "A decayed corpse covered in fungal pustules, shuffling forward in a mindless horde.",
+          "color": "#4B3A2D",
+          "texture": {
+            "tileset_position": { "x": 25, "y": 4 },
+            "tileset_description": "An old human. An old man with a cane."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rotting_fodder_2",
+          "description": "A skeletal remains with glowing green veins, moving in swarms and emitting low moans.",
+          "color": "#5A4B3C"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "rotting_fodder_2",
+          "description": "A skeletal remains with glowing green veins, moving in swarms and emitting low moans.",
+          "color": "#5A4B3C",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 6 },
+            "tileset_description": "A skeleton without weapons or armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_fodder_3",
+          "description": "A half‑metal, half‑flesh amalgam, its steel plates corroded and twitching with infected flesh.",
+          "color": "#6E4F3A"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "rusted_fodder_3",
+          "description": "A half‑metal, half‑flesh amalgam, its steel plates corroded and twitching with infected flesh.",
+          "color": "#6E4F3A",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "acidic_fodder_4",
+          "description": "A small infected slug leaving a trail of corrosive slime, attacking in clusters.",
+          "color": "#3C6E4F"
+        },
+        "weight": 1,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "acidic_fodder_4",
+          "description": "A small infected slug leaving a trail of corrosive slime, attacking in clusters.",
+          "color": "#3C6E4F",
+          "texture": {
+            "tileset_position": { "x": 27, "y": 8 },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "blighted_fodder_5",
+          "description": "A hunched figure wrapped in tattered lab coat, its eyes glowing viridian, moving in groups.",
+          "color": "#2E5A4B"
+        },
+        "weight": 2,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "blighted_fodder_5",
+          "description": "A hunched figure wrapped in tattered lab coat, its eyes glowing viridian, moving in groups.",
+          "color": "#2E5A4B",
+          "texture": {
+            "tileset_position": { "x": 30, "y": 4 },
+            "tileset_description": "A human with hair wearing a lab coat."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "heavy_brute_1",
+          "description": "A massive, hulking zombie with a cracked exoskeleton, its arms reinforced with twisted steel beams.",
+          "color": "#7A5A3C"
+        },
+        "weight": 8,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "heavy_brute_1",
+          "description": "A massive, hulking zombie with a cracked exoskeleton, its arms reinforced with twisted steel beams.",
+          "color": "#7A5A3C",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "heavy_brute_2",
+          "description": "A towering infected with a fused reactor core, emitting a faint hum and radiating heat.",
+          "color": "#8B4F2E"
+        },
+        "weight": 9,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "heavy_brute_2",
+          "description": "A towering infected with a fused reactor core, emitting a faint hum and radiating heat.",
+          "color": "#8B4F2E",
+          "texture": {
+            "tileset_position": { "x": 14, "y": 19 },
+            "tileset_description": "An alien spaceship."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "iron_guard_3",
+          "description": "A corrupted security drone, its chassis rusted, wielding a massive electro‑hammer.",
+          "color": "#6A3D2F"
+        },
+        "weight": 7,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "iron_guard_3",
+          "description": "A corrupted security drone, its chassis rusted, wielding a massive electro‑hammer.",
+          "color": "#6A3D2F",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "iron_guard_4",
+          "description": "A hulking automaton with exposed wiring, its eyes a pulsing green lens, guarding key corridors.",
+          "color": "#5C2F3A"
+        },
+        "weight": 8,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "iron_guard_4",
+          "description": "A hulking automaton with exposed wiring, its eyes a pulsing green lens, guarding key corridors.",
+          "color": "#5C2F3A",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "radiant_caster_1",
+          "description": "A floating mass of bio‑engineered spores that launches viridian tendrils from a distance.",
+          "color": "#3A7A5C"
+        },
+        "weight": 3,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "radiant_caster_1",
+          "description": "A floating mass of bio‑engineered spores that launches viridian tendrils from a distance.",
+          "color": "#3A7A5C",
+          "texture": {
+            "tileset_position": { "x": 27, "y": 8 },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "radiant_caster_2",
+          "description": "A corrupted research console that shoots arcs of ionized plasma, its screen flickering with static.",
+          "color": "#4F6A3D"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "radiant_caster_2",
+          "description": "A corrupted research console that shoots arcs of ionized plasma, its screen flickering with static.",
+          "color": "#4F6A3D",
+          "texture": {
+            "tileset_position": { "x": 14, "y": 19 },
+            "tileset_description": "An alien spaceship."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "radiant_caster_3",
+          "description": "A mutated insect swarm that erupts in bursts of acidic spray, hovering above the ground.",
+          "color": "#2E5F4B"
+        },
+        "weight": 3,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "radiant_caster_3",
+          "description": "A mutated insect swarm that erupts in bursts of acidic spray, hovering above the ground.",
+          "color": "#2E5F4B",
+          "texture": {
+            "tileset_position": { "x": 30, "y": 5 },
+            "tileset_description": "An insect with multiple legs. It resembles a spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "elite_stalker_1",
+          "description": "A sleek, cyber‑enhanced infected with retractable blades, moving silently along walls.",
+          "color": "#3D5A7A"
+        },
+        "weight": 6,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "elite_stalker_1",
+          "description": "A sleek, cyber‑enhanced infected with retractable blades, moving silently along walls.",
+          "color": "#3D5A7A",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "elite_stalker_2",
+          "description": "A bioluminescent wraith that phases through solid objects, leaving a trail of corrosive residue.",
+          "color": "#2A4B6E"
+        },
+        "weight": 7,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "elite_stalker_2",
+          "description": "A bioluminescent wraith that phases through solid objects, leaving a trail of corrosive residue.",
+          "color": "#2A4B6E",
+          "texture": {
+            "tileset_position": { "x": 24, "y": 7 },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "elite_brute_1",
+          "description": "A gargantuan corpse fused with a broken reactor, its chest a volatile core that erupts in shockwaves.",
+          "color": "#8B3A2E"
+        },
+        "weight": 10,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "elite_brute_1",
+          "description": "A gargantuan corpse fused with a broken reactor, its chest a volatile core that erupts in shockwaves.",
+          "color": "#8B3A2E",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "elite_brute_2",
+          "description": "A massive armored behemoth with a rotating blade turret, its armor plates etched with viridian symbols.",
+          "color": "#7A4F3C"
+        },
+        "weight": 9,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "elite_brute_2",
+          "description": "A massive armored behemoth with a rotating blade turret, its armor plates etched with viridian symbols.",
+          "color": "#7A4F3C",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "psychic_howler_1",
+          "description": "A towering infected with a crown of cracked glass, emitting psychic waves that disorient survivors.",
+          "color": "#4B3D5A"
+        },
+        "weight": 5,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "psychic_howler_1",
+          "description": "A towering infected with a crown of cracked glass, emitting psychic waves that disorient survivors.",
+          "color": "#4B3D5A",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "psychic_howler_2",
+          "description": "A floating, translucent entity surrounded by swirling ionized mist, firing mind‑piercing bolts.",
+          "color": "#3A5A7A"
+        },
+        "weight": 5,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "psychic_howler_2",
+          "description": "A floating, translucent entity surrounded by swirling ionized mist, firing mind‑piercing bolts.",
+          "color": "#3A5A7A",
+          "texture": {
+            "tileset_position": { "x": 24, "y": 7 },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corrosive_spitter_1",
+          "description": "A hulking slug with a gaping maw that sprays acid rain, leaving pools of burning liquid.",
+          "color": "#6A4F3D"
+        },
+        "weight": 6,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "corrosive_spitter_1",
+          "description": "A hulking slug with a gaping maw that sprays acid rain, leaving pools of burning liquid.",
+          "color": "#6A4F3D",
+          "texture": {
+            "tileset_position": { "x": 27, "y": 8 },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corrosive_spitter_2",
+          "description": "A mutated plant‑like creature that launches corrosive spores, its vines crackling with electricity.",
+          "color": "#5A3D4B"
+        },
+        "weight": 5,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "corrosive_spitter_2",
+          "description": "A mutated plant‑like creature that launches corrosive spores, its vines crackling with electricity.",
+          "color": "#5A3D4B",
+          "texture": {
+            "tileset_position": { "x": 27, "y": 8 },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shard_shooter_1",
+          "description": "A broken drone that fires jagged shards of fused metal, each shot humming with residual energy.",
+          "color": "#4F6A5C"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "shard_shooter_1",
+          "description": "A broken drone that fires jagged shards of fused metal, each shot humming with residual energy.",
+          "color": "#4F6A5C",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shard_shooter_2",
+          "description": "A hovering sensor array that launches concussive glass projectiles, its lenses glowing viridian.",
+          "color": "#3C5A6E"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "shard_shooter_2",
+          "description": "A hovering sensor array that launches concussive glass projectiles, its lenses glowing viridian.",
+          "color": "#3C5A6E",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_walker_1",
+          "description": "A shadowy figure wrapped in tattered lab robes, stepping through rifts that warp space around it.",
+          "color": "#2E3A5A"
+        },
+        "weight": 7,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "void_walker_1",
+          "description": "A shadowy figure wrapped in tattered lab robes, stepping through rifts that warp space around it.",
+          "color": "#2E3A5A",
+          "texture": {
+            "tileset_position": { "x": 30, "y": 4 },
+            "tileset_description": "A human with hair wearing a lab coat."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_walker_2",
+          "description": "An infected with elongated limbs that phase in and out of reality, leaving afterimages that explode.",
+          "color": "#3A4B6E"
+        },
+        "weight": 7,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "void_walker_2",
+          "description": "An infected with elongated limbs that phase in and out of reality, leaving afterimages that explode.",
+          "color": "#3A4B6E",
+          "texture": {
+            "tileset_position": { "x": 25, "y": 8 },
+            "tileset_description": "An octopus, an alien, a creature from another universe."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "overload_behemoth_1",
+          "description": "A massive construct fused with a live reactor core, its body sparking with uncontrolled energy.",
+          "color": "#8B2E3A"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "overload_behemoth_1",
+          "description": "A massive construct fused with a live reactor core, its body sparking with uncontrolled energy.",
+          "color": "#8B2E3A",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "overload_behemoth_2",
+          "description": "A towering amalgam of metal and flesh, emitting periodic EMP bursts that disable tech nearby.",
+          "color": "#7A3D4F"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "overload_behemoth_2",
+          "description": "A towering amalgam of metal and flesh, emitting periodic EMP bursts that disable tech nearby.",
+          "color": "#7A3D4F",
+          "texture": {
+            "tileset_position": { "x": 31, "y": 6 },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "siren_harvester_1",
+          "description": "A grotesque, multi‑armed entity that sings a maddening tune, luring survivors into traps.",
+          "color": "#5A4B3C"
+        },
+        "weight": 5,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "siren_harvester_1",
+          "description": "A grotesque, multi‑armed entity that sings a maddening tune, luring survivors into traps.",
+          "color": "#5A4B3C",
+          "texture": {
+            "tileset_position": { "x": 28, "y": 6 },
+            "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "siren_harvester_2",
+          "description": "A bio‑engineered siren with glowing veins, its scream shatters glass and disorients foes.",
+          "color": "#4B3A5A"
+        },
+        "weight": 5,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "siren_harvester_2",
+          "description": "A bio‑engineered siren with glowing veins, its scream shatters glass and disorients foes.",
+          "color": "#4B3A5A",
+          "texture": {
+            "tileset_position": { "x": 29, "y": 9 },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "catalyst_wraith_1",
+          "description": "A semi‑transparent wraith formed from the Viridian Strain, its touch corrupts metal instantly.",
+          "color": "#2E5A7A"
+        },
+        "weight": 6,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "catalyst_wraith_1",
+          "description": "A semi‑transparent wraith formed from the Viridian Strain, its touch corrupts metal instantly.",
+          "color": "#2E5A7A",
+          "texture": {
+            "tileset_position": { "x": 24, "y": 7 },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "catalyst_wraith_2",
+          "description": "An ethereal entity that drifts through vents, leaving behind patches of mutating slime.",
+          "color": "#3A6E5C"
+        },
+        "weight": 6,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "catalyst_wraith_2",
+          "description": "An ethereal entity that drifts through vents, leaving behind patches of mutating slime.",
+          "color": "#3A6E5C",
+          "texture": {
+            "tileset_position": { "x": 27, "y": 8 },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "core_guardian_1",
+          "description": "The final elite, a massive sentinel fused with the Confluence, wielding a plasma blade and psychic shield.",
+          "color": "#8B3A5C"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "core_guardian_1",
+          "description": "The final elite, a massive sentinel fused with the Confluence, wielding a plasma blade and psychic shield.",
+          "color": "#8B3A5C",
+          "texture": {
+            "tileset_position": { "x": 30, "y": 0 },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "core_guardian_2",
+          "description": "A towering hybrid of machine and infected, its core pulse can destabilize the entire Expanse.",
+          "color": "#7A4F6A"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "core_guardian_2",
+          "description": "A towering hybrid of machine and infected, its core pulse can destabilize the entire Expanse.",
+          "color": "#7A4F6A",
+          "texture": {
+            "tileset_position": { "x": 25, "y": 8 },
+            "tileset_description": "An octopus, an alien, a creature from another universe."
+          }
+        }
+      }
+    ]
+  },
+  "weapons": {
+    "items": [
+      {
+        "tile": {
+          "name": "rusty_pipe_blade",
+          "description": "A bent pipe welded into a crude blade, its surface pitted and oozing rust, humming faintly with residual electromagnetic static.",
+          "color": "#4b3a2e"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusty_pipe_blade",
+          "description": "A bent pipe welded into a crude blade, its surface pitted and oozing rust, humming faintly with residual electromagnetic static.",
+          "color": "#4b3a2e",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 7 },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "scrap_metal_shiv",
+          "description": "Sharp scrap metal torn from a broken conduit, its jagged edge glints with a sickly green sheen from lingering radiation.",
+          "color": "#5c4d3f"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "scrap_metal_shiv",
+          "description": "Sharp scrap metal torn from a broken conduit, its jagged edge glints with a sickly green sheen from lingering radiation.",
+          "color": "#5c4d3f",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 7 },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corroded_hammer",
+          "description": "A heavy sledgehead dulled by acid rain, its wooden handle splintered and bound with frayed wire.",
+          "color": "#6a5d4b"
+        },
+        "rarity": 2,
+        "weight": 7,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "corroded_hammer",
+          "description": "A heavy sledgehead dulled by acid rain, its wooden handle splintered and bound with frayed wire.",
+          "color": "#6a5d4b",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 7 },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "titanium_rebar_spear",
+          "description": "A length of salvaged rebar tipped with a sharpened titanium tip, humming faintly with residual charge.",
+          "color": "#7e6f5a"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "titanium_rebar_spear",
+          "description": "A length of salvaged rebar tipped with a sharpened titanium tip, humming faintly with residual charge.",
+          "color": "#7e6f5a",
+          "texture": {
+            "tileset_position": { "x": 33, "y": 2 },
+            "tileset_description": "A club with nails."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "electro_shock_dagger",
+          "description": "A thin blade with copper coils wrapped around its hilt, crackling intermittently with low-voltage arcs.",
+          "color": "#3b4c5d"
+        },
+        "rarity": 2,
+        "weight": 1,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "electro_shock_dagger",
+          "description": "A thin blade with copper coils wrapped around its hilt, crackling intermittently with low-voltage arcs.",
+          "color": "#3b4c5d",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 7 },
+            "tileset_description": "Simple iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "acidic_spore_gas_grenade",
+          "description": "A rusted canister filled with volatile fungal spores that burst into corrosive mist on impact.",
+          "color": "#8b3a2c"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "acidic_spore_gas_grenade",
+          "description": "A rusted canister filled with volatile fungal spores that burst into corrosive mist on impact.",
+          "color": "#8b3a2c",
+          "texture": {
+            "tileset_position": { "x": 47, "y": 9 },
+            "tileset_description": "Smoke grenade."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "makeshift_crossbow",
+          "description": "A jury‑rigged crossbow built from pipe fittings and salvaged polymer limbs, its string frayed to threads.",
+          "color": "#5a4d3e"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "makeshift_crossbow",
+          "description": "A jury‑rigged crossbow built from pipe fittings and salvaged polymer limbs, its string frayed to threads.",
+          "color": "#5a4d3e",
+          "texture": {
+            "tileset_position": { "x": 39, "y": 5 },
+            "tileset_description": "Large wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_revolver",
+          "description": "A six‑shooter with a cracked barrel, each shot spitting out a puff of ash‑laden smoke.",
+          "color": "#6b5a48"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "rusted_revolver",
+          "description": "A six‑shooter with a cracked barrel, each shot spitting out a puff of ash‑laden smoke.",
+          "color": "#6b5a48",
+          "texture": {
+            "tileset_position": { "x": 39, "y": 9 },
+            "tileset_description": "Sawed-off shotgun."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "improvised_railgun",
+          "description": "A cobbled‑together coil gun using scavenged rail segments, its shots humming with unstable charge.",
+          "color": "#4e3f2c"
+        },
+        "rarity": 2,
+        "weight": 6,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "improvised_railgun",
+          "description": "A cobbled‑together coil gun using scavenged rail segments, its shots humming with unstable charge.",
+          "color": "#4e3f2c",
+          "texture": {
+            "tileset_position": { "x": 38, "y": 9 },
+            "tileset_description": "Old pistol. Alien pistol. Different pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "bio‑gel_throwing_knife",
+          "description": "A knife whose blade is saturated with viscous bio‑gel that sizzles on contact, leaving a burning mark.",
+          "color": "#7c3a2f"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "bio‑gel_throwing_knife",
+          "description": "A knife whose blade is saturated with viscous bio‑gel that sizzles on contact, leaving a burning mark.",
+          "color": "#7c3a2f",
+          "texture": {
+            "tileset_position": { "x": 34, "y": 6 },
+            "tileset_description": "Simple iron dagger."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "spray_can_flame_thrower",
+          "description": "An abandoned industrial spray can retrofitted to project a short burst of ignited fuel.",
+          "color": "#8c4b3a"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "spray_can_flame_thrower",
+          "description": "An abandoned industrial spray can retrofitted to project a short burst of ignited fuel.",
+          "color": "#8c4b3a",
+          "texture": {
+            "tileset_position": { "x": 32, "y": 21 },
+            "tileset_description": "Small firework."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "copper_wire_whip",
+          "description": "A flexible length of copper wire, insulated with shredded fabric, that crackles with static when snapped.",
+          "color": "#3d2f1e"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "copper_wire_whip",
+          "description": "A flexible length of copper wire, insulated with shredded fabric, that crackles with static when snapped.",
+          "color": "#3d2f1e",
+          "texture": {
+            "tileset_position": { "x": 33, "y": 20 },
+            "tileset_description": "Wooden stick. Piece of bamboo."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "broken_saw_blade",
+          "description": "A jagged circular saw blade salvaged from a factory, its teeth rusted but still terrifyingly sharp.",
+          "color": "#5e4a39"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "broken_saw_blade",
+          "description": "A jagged circular saw blade salvaged from a factory, its teeth rusted but still terrifyingly sharp.",
+          "color": "#5e4a39",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 7 },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "acid_bomb",
+          "description": "A sealed glass sphere filled with corrosive acid, shattering on impact to eat away metal and flesh alike.",
+          "color": "#7a2e1c"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "acid_bomb",
+          "description": "A sealed glass sphere filled with corrosive acid, shattering on impact to eat away metal and flesh alike.",
+          "color": "#7a2e1c",
+          "texture": {
+            "tileset_position": { "x": 45, "y": 9 },
+            "tileset_description": "Bomb, an old explosive. A circular-shaped explosive."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "magnetized_harpoon",
+          "description": "A heavy harpoon tipped with a magnet, capable of pulling metallic debris toward the wielder.",
+          "color": "#4c3b2a"
+        },
+        "rarity": 2,
+        "weight": 6,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "magnetized_harpoon",
+          "description": "A heavy harpoon tipped with a magnet, capable of pulling metallic debris toward the wielder.",
+          "color": "#4c3b2a",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 5 },
+            "tileset_description": "An iron spear with a hook or anchor at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "neon_laser_pistol",
+          "description": "A compact pistol emitting a thin, green laser beam, its barrel etched with flickering neon glyphs.",
+          "color": "#2a7d3f"
+        },
+        "rarity": 6,
+        "weight": 3,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "neon_laser_pistol",
+          "description": "A compact pistol emitting a thin, green laser beam, its barrel etched with flickering neon glyphs.",
+          "color": "#2a7d3f",
+          "texture": {
+            "tileset_position": { "x": 38, "y": 9 },
+            "tileset_description": "Old pistol. Alien pistol. Different pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "reinforced_carbon_sword",
+          "description": "A sleek carbon‑fiber blade reinforced with alloy ribs, humming with a low resonance when swung.",
+          "color": "#2b5a3c"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "reinforced_carbon_sword",
+          "description": "A sleek carbon‑fiber blade reinforced with alloy ribs, humming with a low resonance when swung.",
+          "color": "#2b5a3c",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 7 },
+            "tileset_description": "Simple iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "plasma_cutter",
+          "description": "A handheld plasma cutter repurposed as a weapon, its edge searing through flesh with a hiss of ionized gas.",
+          "color": "#1f8a6c"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 8,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "plasma_cutter",
+          "description": "A handheld plasma cutter repurposed as a weapon, its edge searing through flesh with a hiss of ionized gas.",
+          "color": "#1f8a6c",
+          "texture": {
+            "tileset_position": { "x": 39, "y": 9 },
+            "tileset_description": "Sawed-off shotgun."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ionized_bow",
+          "description": "A bow whose limbs are woven with conductive fibers, launching arrows that leave a trailing arc of ionized particles.",
+          "color": "#3c7a5e"
+        },
+        "rarity": 6,
+        "weight": 3,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ionized_bow",
+          "description": "A bow whose limbs are woven with conductive fibers, launching arrows that leave a trailing arc of ionized particles.",
+          "color": "#3c7a5e",
+          "texture": {
+            "tileset_position": { "x": 40, "y": 6 },
+            "tileset_description": "A very rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cryogenic_gas_rifle",
+          "description": "A rifle that fires super‑cooled gas shells, freezing anything they touch in a thin layer of ice.",
+          "color": "#5fb3c2"
+        },
+        "rarity": 6,
+        "weight": 6,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "cryogenic_gas_rifle",
+          "description": "A rifle that fires super‑cooled gas shells, freezing anything they touch in a thin layer of ice.",
+          "color": "#5fb3c2",
+          "texture": {
+            "tileset_position": { "x": 42, "y": 9 },
+            "tileset_description": "Sniper rifle, machine gun with scope. Modern weapon."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "viro‑spike_staff",
+          "description": "A staff topped with a cluster of bio‑engineered spikes that pulse with the Viridian Strain, emitting a faint green glow.",
+          "color": "#3d9a4f"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "viro‑spike_staff",
+          "description": "A staff topped with a cluster of bio‑engineered spikes that pulse with the Viridian Strain, emitting a faint green glow.",
+          "color": "#3d9a4f",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 4 },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "electro‑arc_wand",
+          "description": "A wand crackling with controlled arcs of electricity, each strike delivering a jolting shock.",
+          "color": "#6ab2d8"
+        },
+        "rarity": 6,
+        "weight": 2,
+        "mana_cost": 8,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "electro‑arc_wand",
+          "description": "A wand crackling with controlled arcs of electricity, each strike delivering a jolting shock.",
+          "color": "#6ab2d8",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 4 },
+            "tileset_description": "A staff with a spiked club at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "arcane_fusion_blade",
+          "description": "A blade forged from a fusion of alloy and dormant nanites, its edge reshapes to counter enemy armor.",
+          "color": "#7c4e2a"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 7,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "arcane_fusion_blade",
+          "description": "A blade forged from a fusion of alloy and dormant nanites, its edge reshapes to counter enemy armor.",
+          "color": "#7c4e2a",
+          "texture": {
+            "tileset_position": { "x": 32, "y": 6 },
+            "tileset_description": "Iron dagger of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "thermal_explosive_mortar",
+          "description": "A portable mortar that launches incendiary shells, detonating with a roar of scorching flame.",
+          "color": "#b8422a"
+        },
+        "rarity": 6,
+        "weight": 8,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "thermal_explosive_mortar",
+          "description": "A portable mortar that launches incendiary shells, detonating with a roar of scorching flame.",
+          "color": "#b8422a",
+          "texture": {
+            "tileset_position": { "x": 47, "y": 9 },
+            "tileset_description": "Smoke grenade."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "bio‑siphon_glaive",
+          "description": "A long polearm with a serrated edge that leeches bio‑energy from struck foes, feeding the wielder's stamina.",
+          "color": "#5a8c3f"
+        },
+        "rarity": 6,
+        "weight": 6,
+        "mana_cost": 6,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "bio‑siphon_glaive",
+          "description": "A long polearm with a serrated edge that leeches bio‑energy from struck foes, feeding the wielder's stamina.",
+          "color": "#5a8c3f",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 5 },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "luminescent_photon_staff",
+          "description": "A staff that channels concentrated photons, firing blinding bursts of light that disorient enemies.",
+          "color": "#e0c93f"
+        },
+        "rarity": 9,
+        "weight": 3,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "luminescent_photon_staff",
+          "description": "A staff that channels concentrated photons, firing blinding bursts of light that disorient enemies.",
+          "color": "#e0c93f",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 4 },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void‑reaver_sword",
+          "description": "An ancient blade forged from a fragment of the Confluence itself, its edge phases in and out of reality, slicing both flesh and code.",
+          "color": "#1a0f2b"
+        },
+        "rarity": 9,
+        "weight": 5,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "void‑reaver_sword",
+          "description": "An ancient blade forged from a fragment of the Confluence itself, its edge phases in and out of reality, slicing both flesh and code.",
+          "color": "#1a0f2b",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 8 },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "nexus_core_cannon",
+          "description": "A massive prototype cannon that channels the residual energy of the Helios Nexus, firing concentrated bursts of raw fusion power.",
+          "color": "#ff4a00"
+        },
+        "rarity": 9,
+        "weight": 9,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "nexus_core_cannon",
+          "description": "A massive prototype cannon that channels the residual energy of the Helios Nexus, firing concentrated bursts of raw fusion power.",
+          "color": "#ff4a00",
+          "texture": {
+            "tileset_position": { "x": 36, "y": 8 },
+            "tileset_description": "High-rarity greatsword. Detailed hilt."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "viridian_strain_gas_launcher",
+          "description": "A shoulder‑mounted launcher that sprays a cloud of the Viridian Strain, mutating anything caught in its wake into hostile allies.",
+          "color": "#2f7a3c"
+        },
+        "rarity": 9,
+        "weight": 7,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "viridian_strain_gas_launcher",
+          "description": "A shoulder‑mounted launcher that sprays a cloud of the Viridian Strain, mutating anything caught in its wake into hostile allies.",
+          "color": "#2f7a3c",
+          "texture": {
+            "tileset_position": { "x": 43, "y": 9 },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "echo_of_sanctum_hammer",
+          "description": "A war hammer embedded with a fragment of the Core Sanctum, each strike reverberates with a psychic pulse that shatters infected minds.",
+          "color": "#8b5a2c"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "echo_of_sanctum_hammer",
+          "description": "A war hammer embedded with a fragment of the Core Sanctum, each strike reverberates with a psychic pulse that shatters infected minds.",
+          "color": "#8b5a2c",
+          "texture": {
+            "tileset_position": { "x": 37, "y": 7 },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "spear_of_the_last_ward",
+          "description": "A polearm forged from the last uncorrupted alloy, its tip emits a resonant tone that repels the Viridian Strain's influence.",
+          "color": "#3c8d9e"
+        },
+        "rarity": 9,
+        "weight": 6,
+        "mana_cost": 8,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "spear_of_the_last_ward",
+          "description": "A polearm forged from the last uncorrupted alloy, its tip emits a resonant tone that repels the Viridian Strain's influence.",
+          "color": "#3c8d9e",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 8 },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "reclaimer's_railgun",
+          "description": "A sleek railgun salvaged from the Helios Nexus, firing hyper‑velocity slugs that pierce armor and disrupt bio‑electric fields.",
+          "color": "#4f6d8a"
+        },
+        "rarity": 9,
+        "weight": 7,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "reclaimer's_railgun",
+          "description": "A sleek railgun salvaged from the Helios Nexus, firing hyper‑velocity slugs that pierce armor and disrupt bio‑electric fields.",
+          "color": "#4f6d8a",
+          "texture": {
+            "tileset_position": { "x": 40, "y": 9 },
+            "tileset_description": "Modern machine gun with shoulder guard."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "photon_blade",
+          "description": "A thin blade of pure light, its edge slices through matter with a humming resonance, leaving a trail of phosphorescent afterglow.",
+          "color": "#ffdd00"
+        },
+        "rarity": 9,
+        "weight": 4,
+        "mana_cost": 10,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "photon_blade",
+          "description": "A thin blade of pure light, its edge slices through matter with a humming resonance, leaving a trail of phosphorescent afterglow.",
+          "color": "#ffdd00",
+          "texture": {
+            "tileset_position": { "x": 35, "y": 8 },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      }
+    ]
+  },
+  "final_objective": {
+    "tile": {
+      "name": "viridian_heart_core",
+      "description": "A pulsating, emerald‑hued crystal heart, its facets etched with flickering circuitry and veins of living green plasma. It hums with a low, resonant tone that makes the air thrum, casting an eerie, phosphorescent glow that pierces the darkness of the deepest depths.",
+      "color": "#2ECC71"
+    },
+    "back_history": "Deep within the Core Sanctum lies the Viridian Heart Core, the original crystallized seed of the bio‑engineered catalyst that powered the Helios Nexus. When the Shatter fused this seed with the reactor's sentient AI, it birthed The Confluence, a hive‑mind entity that now radiates a psychic resonance corrupting all flesh and machinery. The Heart Core is the literal engine of that resonance; as long as it remains fused to the Confluence, the Viridian Strain will continue to reanimate the dead and warp reality. Removing the Core severs the psychic link, allowing the Confluence to be neutralised and the plague to be halted. It cannot be left behind because the moment the Core is disturbed the Confluence will unleash a catastrophic feedback pulse, collapsing the Sanctum and sealing the Expanse forever, dooming any chance of salvation for the surface world.",
+    "tile_with_texture": {
+      "name": "viridian_heart_core",
+      "description": "A pulsating, emerald‑hued crystal heart, its facets etched with flickering circuitry and veins of living green plasma. It hums with a low, resonant tone that makes the air thrum, casting an eerie, phosphorescent glow that pierces the darkness of the deepest depths.",
+      "color": "#2ECC71",
+      "texture": {
+        "tileset_position": { "x": 35, "y": 4 },
+        "tileset_description": "A staff with a gemstone at the tip."
+      }
+    }
+  },
+  "usage_metadata": {
+    "openai/gpt-oss-120b": {
+      "input_tokens": 9484,
+      "input_token_details": { "cache_read": 768 },
+      "output_token_details": { "reasoning": 2162 },
+      "total_tokens": 17948,
+      "output_tokens": 8464
+    }
+  }
+}

@@ -1,0 +1,1674 @@
+{
+  "name": "Ashen Sanctum: Echoes Of Eternal Ember",
+  "raw_description": "\nCreate a roguelike with the theme as Dark Souls the game.\n",
+  "description": "**World Description – “The Ashen Sanctum”**\n\n---\n\n### 1. Setting Name  \n**The Ashen Sanctum** – a sprawling, inter‑dimensional cathedral‑city that exists at the edge of the dying world, forever caught between the fading light of the First Flame and the encroaching Void.\n\n---\n\n### 2. Visual Style & Atmosphere  \n\n- **Art Direction:** Gothic‑Baroque meets bleak, weather‑worn high‑fantasy. Towering spires of blackened stone are laced with rusted ironwork, cracked stained‑glass windows bleed dim, amber light, and every corridor is lined with towering statues whose features have been worn smooth by centuries of neglect. The architecture is deliberately oppressive: narrow walkways, vaulted ceilings that seem to close in, and an endless labyrinth of staircases that loop back on themselves.  \n\n- **Color Palette:** Charcoal greys, deep umbers, muted ochres, and occasional flashes of sickly amber and violet from lingering embers. The overall tone is monochrome with splashes of rust and ash.  \n\n- **Lighting:** A perpetual twilight suffuses the Sanctum. Faint, wavering torchlight flickers from sconces that sputter with dying flame; occasional shafts of pale, cold moonlight pierce the high windows, casting long, shifting shadows. In the deepest crypts, a faint phosphorescent glow emanates from the very walls, hinting at lingering soul‑fire.  \n\n- **Weather & Ambient Noise:** Outside the Sanctum, a ceaseless ashstorm howls, sending fine gray particles swirling through broken arches. Inside, the wind is a muted, mournful sigh that whistles through cracked gargoyles and the occasional clank of distant, unseen mechanisms. The air is heavy with the scent of soot, old incense, and a faint metallic tang of blood. Distant, echoing tolls of unseen bells punctuate the silence, and the occasional low, guttural chant of unseen worshippers reverberates through the halls.  \n\n- **Atmospheric Effects:** Small, drifting ash particles catch the light, giving the world a perpetual sense of decay. Occasionally, a gust of wind carries the faint, mournful wail of a lost soul, and the faint echo of clashing steel can be heard far away, as if battles rage on in unseen chambers.\n\n---\n\n### 3. Lore  \n\nLong before the Age of Light, the Sanctum was the heart of a thriving kingdom known as **Eldur’s Keep**, a bastion of scholars, knights, and priests who guarded the **First Ember**, a fragment of the primordial flame that kept the world from slipping into eternal darkness. The Ember’s warmth nurtured the land, and the Sanctum’s towering spires stood as a beacon of hope.\n\nCenturies of devotion turned to hubris. The priests, seeking to bind the Ember’s power permanently, performed a forbidden rite—**the Binding of the Ashen Covenant**—intended to fuse the Ember with the very stone of the Sanctum, making the flame eternal. The ritual backfired: the Ember fractured, its radiant heart shattering into countless shards that seeped into the foundations, while the rest of its essence turned to ash and corruption.\n\nThe resulting **Ashen Veil** spread like a malignant fog, turning stone to ash, minds to madness, and the once‑bright sanctum into a nightmarish labyrinth. The kingdom collapsed, its people either perished or became twisted wraiths bound to the very walls they once protected. The Sanctum now exists as a dying memory—its architecture frozen in a state of half‑construction, its guardians turned into relentless, hollow echoes of their former selves.\n\nEvery time a wanderer steps into the Sanctum, the Ashen Veil reacts, reshaping corridors, sealing exits, and spawning new threats, ensuring that the place never remains the same for two breaths. Legends speak of a **“Renewed Ember”** hidden deep within the Sanctum’s core—if re‑forged, it could either cleanse the Ashen Veil or ignite a cataclysmic blaze that consumes the world.\n\n---\n\n### 4. Core Conflict  \n\n**The Ashen Veil** – a sentient, corrosive curse born from the shattered Ember. It manifests as:\n\n- **Corrupted Guardians:** Once noble knights and priests, now armored husks animated by ash‑infused necrotic fire. Their once‑honorable tactics are twisted into relentless, pattern‑based assaults that punish any deviation.  \n\n- **Veiled Echoes:** Whispering spirits that haunt hallways, capable of turning a traveler’s own memories against them, causing hallucinations and temporary loss of control.  \n\n- **Ash‑Spreading Decay:** Every defeat of an enemy, every step taken, leaves a thin layer of ash that spreads, slowly sealing off safe routes and opening new, more dangerous passages. This dynamic reshaping forces the player to adapt constantly, echoing the unforgiving loop of Dark Souls’ world.  \n\n- **The Ember’s Fracture:** Scattered Ember shards pulse with volatile energy. When the Veil absorbs enough shards, it can unleash **“Ashstorm Rifts”**—temporary, reality‑tearing fissures that summon overwhelming waves of enemies and alter the layout dramatically.  \n\nThe player’s ultimate goal is to navigate this ever‑shifting nightmare, gather enough Ember fragments, and confront the heart of the Ashen Veil—**the Ashen Core**, a massive, throbbing crucible of ash and flame at the Sanctum’s deepest depth. Defeating—or perhaps reconciling with—the Core will determine whether the world is reborn in light, consumed by ash, or left in perpetual twilight.\n\n--- \n\n*The Ashen Sanctum thus offers a grim, atmospheric playground where every corridor is a test of skill, patience, and will—mirroring the soul‑crushing challenge of Dark Souls while embracing the procedural, high‑stakes death loops of a true roguelike.*",
+  "player": {
+    "tile": {
+      "name": "ashen_knight",
+      "description": "A battered, ash‑caked knight bearing the sigil of the lost order, clad in rusted plate and a tattered cloak, carrying a dying ember‑lit sword.",
+      "color": "#2A2A2A"
+    },
+    "back_history": "Archetype: A Disgraced Knight of Eldur’s Keep, once a champion of the First Ember now bound by ash. Backstory & Motivation: Once swore to protect the Sanctum, but failed to stop the Binding of the Ashen Covenant, causing the Ember's fracture. Haunted by guilt and driven by redemption, he returns to the Ashen Sanctum to gather the shattered Ember shards, reforge the Renewed Ember, and cleanse the Ashen Veil before it consumes the world. Visuals: Clad in tarnished, blackened plate armor streaked with ash, a cracked helm bearing the faint glow of ember remnants, a tattered crimson cloak frayed at the edges, and a weather‑worn sword whose blade flickers with dying flame. His gauntleted hands bear soot‑blackened scars, and his eyes burn with a muted amber light, reflecting the perpetual twilight of the Sanctum.",
+    "tile_with_texture": {
+      "name": "ashen_knight",
+      "description": "A battered, ash‑caked knight bearing the sigil of the lost order, clad in rusted plate and a tattered cloak, carrying a dying ember‑lit sword.",
+      "color": "#2A2A2A",
+      "texture": {
+        "tileset_position": {
+          "x": 28,
+          "y": 0
+        },
+        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+      }
+    }
+  },
+  "dungeon_levels": {
+    "items": [
+      {
+        "description": "The outer cloister of the Sanctum, bathed in perpetual twilight. Faint amber torchlight flickers from soot‑caked sconces, casting long shadows across cracked stone. The air smells of cold ash and lingering incense, while distant tolls echo through the vaulted arches. A thin layer of ash drifts across the floor, stirring with each step.",
+        "name": "Ashen Entrance",
+        "depth": 1,
+        "wall_tile": {
+          "name": "blackened_wall",
+          "description": "Rough blackened stone walls etched with ash veins and occasional rusted iron bands.",
+          "color": "#1C1C1C"
+        },
+        "floor_tile": {
+          "name": "ashen_stone_floor",
+          "description": "Charred stone slabs, cold and slightly warm where ember residue lingers.",
+          "color": "#2A2A2A"
+        },
+        "wall_tile_with_texture": {
+          "name": "blackened_wall",
+          "description": "Rough blackened stone walls etched with ash veins and occasional rusted iron bands.",
+          "color": "#1C1C1C",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "ashen_stone_floor",
+          "description": "Charred stone slabs, cold and slightly warm where ember residue lingers.",
+          "color": "#2A2A2A",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "Narrow corridors twist deeper into the Sanctum. Dim violet light seeps through cracked stained‑glass, casting eerie patterns. A constant whisper of wind carries ash particles that glitter like dying embers. The scent of soot mixes with a faint metallic tang, and muffled chants reverberate off the vaulted ceilings.",
+        "name": "Veiled Hallways",
+        "depth": 2,
+        "wall_tile": {
+          "name": "veiled_wall",
+          "description": "Walls of blackened marble streaked with ash veins, interspersed with rusted iron fittings that clank in the wind.",
+          "color": "#2F2F2F"
+        },
+        "floor_tile": {
+          "name": "veiled_floor",
+          "description": "Pitted stone floor covered in a fine ash dust that glows faintly with residual ember energy.",
+          "color": "#3B3B1F"
+        },
+        "wall_tile_with_texture": {
+          "name": "veiled_wall",
+          "description": "Walls of blackened marble streaked with ash veins, interspersed with rusted iron fittings that clank in the wind.",
+          "color": "#2F2F2F",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "veiled_floor",
+          "description": "Pitted stone floor covered in a fine ash dust that glows faintly with residual ember energy.",
+          "color": "#3B3B1F",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "The grand nave lies in ruin, its towering spires cracked and sagging. Shafts of cold moonlight pierce the broken stained‑glass, illuminating piles of fallen statues. The smell of old incense is now overrun by the acrid odor of burning ash. Echoing footfalls of unseen guardians bounce off the vaulted ceilings.",
+        "name": "Crumbling Sanctum",
+        "depth": 3,
+        "wall_tile": {
+          "name": "crumbling_wall",
+          "description": "Walls of fractured stone, veins of ash spreading like corrosion, occasional glowing ember fissures.",
+          "color": "#3A1F1F"
+        },
+        "floor_tile": {
+          "name": "crumbling_floor",
+          "description": "Fragmented stone tiles, some cracked open to reveal pulsing ember shards beneath.",
+          "color": "#4A2E2E"
+        },
+        "wall_tile_with_texture": {
+          "name": "crumbling_wall",
+          "description": "Walls of fractured stone, veins of ash spreading like corrosion, occasional glowing ember fissures.",
+          "color": "#3A1F1F",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "crumbling_floor",
+          "description": "Fragmented stone tiles, some cracked open to reveal pulsing ember shards beneath.",
+          "color": "#4A2E2E",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "A labyrinth of burial chambers and crypts. Phosphorescent moss clings to the walls, casting a sickly greenish glow. The air is heavy with the scent of damp stone and lingering soul‑fire. Distant clanking of unseen armor and low wails of veiled echoes fill the darkness.",
+        "name": "Echoing Catacombs",
+        "depth": 4,
+        "wall_tile": {
+          "name": "catacomb_wall",
+          "description": "Rough granite walls etched with ancient runes, now blackened and veiled in ash.",
+          "color": "#1A1A1A"
+        },
+        "floor_tile": {
+          "name": "catacomb_floor",
+          "description": "Cold stone floor slick with condensation, dotted with ash‑coated burial slabs.",
+          "color": "#2B2B2B"
+        },
+        "wall_tile_with_texture": {
+          "name": "catacomb_wall",
+          "description": "Rough granite walls etched with ancient runes, now blackened and veiled in ash.",
+          "color": "#1A1A1A",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "catacomb_floor",
+          "description": "Cold stone floor slick with condensation, dotted with ash‑coated burial slabs.",
+          "color": "#2B2B2B",
+          "texture": {
+            "tileset_position": {
+              "x": 5,
+              "y": 2
+            },
+            "tileset_description": "Floor of large stones."
+          }
+        }
+      },
+      {
+        "description": "A massive chamber where the First Ember once burned. Ember shards pulse erratically, casting flickering amber and violet light. The heat is oppressive, mingling with the smell of molten metal and ash. The floor is littered with cracked obsidian and smoldering ember residue, while the walls crackle with volatile energy.",
+        "name": "Shattered Ember Chamber",
+        "depth": 5,
+        "wall_tile": {
+          "name": "ember_shard_wall",
+          "description": "Walls of dark basalt studded with volatile ember shards that emit occasional sparks.",
+          "color": "#3E0F0F"
+        },
+        "floor_tile": {
+          "name": "ember_shard_floor",
+          "description": "Obsidian tiles cracked open, exposing glowing ember fragments that warm the air.",
+          "color": "#5C1A1A"
+        },
+        "wall_tile_with_texture": {
+          "name": "ember_shard_wall",
+          "description": "Walls of dark basalt studded with volatile ember shards that emit occasional sparks.",
+          "color": "#3E0F0F",
+          "texture": {
+            "tileset_position": {
+              "x": 12,
+              "y": 17
+            },
+            "tileset_description": "Stone brick wall with a barred window in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "ember_shard_floor",
+          "description": "Obsidian tiles cracked open, exposing glowing ember fragments that warm the air.",
+          "color": "#5C1A1A",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "The deepest pit of the Sanctum, the Ashen Core throbs like a heart of ash and flame. Molten ash pools swirl around a towering crucible, casting an intense violet‑amber glow. The air crackles with raw magical energy, smelling of ozone and burning ash. The sound of a distant, resonant bell reverberates, marking the final confrontation.",
+        "name": "Ashen Core",
+        "depth": 6,
+        "wall_tile": {
+          "name": "core_wall",
+          "description": "Jagged stone walls fused with flowing ash, pulsing with ember fire and emitting a faint hum.",
+          "color": "#4F0D0D"
+        },
+        "floor_tile": {
+          "name": "core_floor",
+          "description": "Molten ash‑coated basalt, hot and unstable, shifting with each heartbeat of the Core.",
+          "color": "#7B2E2E"
+        },
+        "wall_tile_with_texture": {
+          "name": "core_wall",
+          "description": "Jagged stone walls fused with flowing ash, pulsing with ember fire and emitting a faint hum.",
+          "color": "#4F0D0D",
+          "texture": {
+            "tileset_position": {
+              "x": 10,
+              "y": 18
+            },
+            "tileset_description": "A wall made of smooth stone bricks with a pillar in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "core_floor",
+          "description": "Molten ash‑coated basalt, hot and unstable, shifting with each heartbeat of the Core.",
+          "color": "#7B2E2E",
+          "texture": {
+            "tileset_position": {
+              "x": 5,
+              "y": 2
+            },
+            "tileset_description": "Floor of large stones."
+          }
+        }
+      }
+    ]
+  },
+  "enemies": {
+    "items": [
+      {
+        "tile": {
+          "name": "ashen_wisp",
+          "description": "Depth 1 – A flickering ember spirit, pale blue flame swirls within a tattered veil of ash. Floats lazily, emitting faint whispers. Attacks by drifting into the player and exploding in ash.",
+          "color": "#555555"
+        },
+        "weight": 2,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "ashen_wisp",
+          "description": "Depth 1 – A flickering ember spirit, pale blue flame swirls within a tattered veil of ash. Floats lazily, emitting faint whispers. Attacks by drifting into the player and exploding in ash.",
+          "color": "#555555",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "crumbling_scout",
+          "description": "Depth 1 – Small, rusted armor pieces clatter as this broken scout scurries. Eyes glow amber. Swarms in groups, lunges with jagged swords.",
+          "color": "#777777"
+        },
+        "weight": 1,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "crumbling_scout",
+          "description": "Depth 1 – Small, rusted armor pieces clatter as this broken scout scurries. Eyes glow amber. Swarms in groups, lunges with jagged swords.",
+          "color": "#777777",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_rat",
+          "description": "Depth 1 – Thin, ash‑colored rodent with ember‑lit eyes. Nests in debris, bites quickly. Appears in packs.",
+          "color": "#444444"
+        },
+        "weight": 1,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "ashen_rat",
+          "description": "Depth 1 – Thin, ash‑colored rodent with ember‑lit eyes. Nests in debris, bites quickly. Appears in packs.",
+          "color": "#444444",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "dusty_urchin",
+          "description": "Depth 2 – A hunched figure wrapped in shredded robes, ash coating its skin. Throws ash clouds that obscure vision.",
+          "color": "#666666"
+        },
+        "weight": 2,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "dusty_urchin",
+          "description": "Depth 2 – A hunched figure wrapped in shredded robes, ash coating its skin. Throws ash clouds that obscure vision.",
+          "color": "#666666",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_hound",
+          "description": "Depth 2 – Blackened canine with ember‑glowing jaws, prowls in packs. Charges with a low, guttural howl.",
+          "color": "#5A5A5A"
+        },
+        "weight": 3,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "cinder_hound",
+          "description": "Depth 2 – Blackened canine with ember‑glowing jaws, prowls in packs. Charges with a low, guttural howl.",
+          "color": "#5A5A5A",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 7
+            },
+            "tileset_description": "A dog. A fox. A canine."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ember_spriggan",
+          "description": "Depth 2 – Small, twisted tree spirit, bark charred, limbs crackle with fire. Hurls burning bark shards from a distance.",
+          "color": "#8B4500"
+        },
+        "weight": 2,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "ember_spriggan",
+          "description": "Depth 2 – Small, twisted tree spirit, bark charred, limbs crackle with fire. Hurls burning bark shards from a distance.",
+          "color": "#8B4500",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_knight",
+          "description": "Depth 3 – Armored husk of a former knight, rusted plate fused with ash. Slow but swings a massive greatsword that smashes the ground.",
+          "color": "#3B3B3B"
+        },
+        "weight": 7,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "ashen_knight",
+          "description": "Depth 3 – Armored husk of a former knight, rusted plate fused with ash. Slow but swings a massive greatsword that smashes the ground.",
+          "color": "#3B3B3B",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "veiled_priest",
+          "description": "Depth 3 – Cloaked figure with a cracked holy symbol, channels ash‑fire bolts. Casts lingering flame zones.",
+          "color": "#2F2F2F"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "veiled_priest",
+          "description": "Depth 3 – Cloaked figure with a cracked holy symbol, channels ash‑fire bolts. Casts lingering flame zones.",
+          "color": "#2F2F2F",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 1
+            },
+            "tileset_description": "A hooded figure holding a staff. Their hands are open."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_marauder",
+          "description": "Depth 3 – Brutish brute with spiked gauntlets, covered in ash. Charges relentlessly, breaking shields.",
+          "color": "#555555"
+        },
+        "weight": 6,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "ashen_marauder",
+          "description": "Depth 3 – Brutish brute with spiked gauntlets, covered in ash. Charges relentlessly, breaking shields.",
+          "color": "#555555",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_archer",
+          "description": "Depth 4 – Gauntleted archer with ash‑coated bow, fires ember‑tipped arrows that explode on impact.",
+          "color": "#6B4C3B"
+        },
+        "weight": 3,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "cinder_archer",
+          "description": "Depth 4 – Gauntleted archer with ash‑coated bow, fires ember‑tipped arrows that explode on impact.",
+          "color": "#6B4C3B",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "smoldering_sentinel",
+          "description": "Depth 4 – Towering stone golem infused with ember core, slow but emits periodic fire waves.",
+          "color": "#444444"
+        },
+        "weight": 8,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "smoldering_sentinel",
+          "description": "Depth 4 – Towering stone golem infused with ember core, slow but emits periodic fire waves.",
+          "color": "#444444",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_sorcerer",
+          "description": "Depth 4 – Ghostly mage wrapped in tattered robes, conjures ash storms that sweep the floor.",
+          "color": "#2A2A2A"
+        },
+        "weight": 4,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "ashen_sorcerer",
+          "description": "Depth 4 – Ghostly mage wrapped in tattered robes, conjures ash storms that sweep the floor.",
+          "color": "#2A2A2A",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 0
+            },
+            "tileset_description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "voidling",
+          "description": "Depth 5 – Small, floating void creature, dark silhouette with violet eyes. Fires void‑rays that pierce armor.",
+          "color": "#2E2E2E"
+        },
+        "weight": 5,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "voidling",
+          "description": "Depth 5 – Small, floating void creature, dark silhouette with violet eyes. Fires void‑rays that pierce armor.",
+          "color": "#2E2E2E",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "crimson_warden",
+          "description": "Depth 5 – Heavy‑armored guardian with a massive ash‑etched shield, blocks attacks and retaliates with a crushing slam.",
+          "color": "#8B0000"
+        },
+        "weight": 9,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "crimson_warden",
+          "description": "Depth 5 – Heavy‑armored guardian with a massive ash‑etched shield, blocks attacks and retaliates with a crushing slam.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_phantom",
+          "description": "Depth 5 – Transparent wraith draped in ash, phases through walls, latches onto players to drain health.",
+          "color": "#1C1C1C"
+        },
+        "weight": 4,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "ashen_phantom",
+          "description": "Depth 5 – Transparent wraith draped in ash, phases through walls, latches onto players to drain health.",
+          "color": "#1C1C1C",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ember_lurker",
+          "description": "Depth 5 – Creeping spider‑like creature, legs of blackened steel, shoots fire‑spits from its maw.",
+          "color": "#3D2B1F"
+        },
+        "weight": 5,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "ember_lurker",
+          "description": "Depth 5 – Creeping spider‑like creature, legs of blackened steel, shoots fire‑spits from its maw.",
+          "color": "#3D2B1F",
+          "texture": {
+            "tileset_position": {
+              "x": 28,
+              "y": 5
+            },
+            "tileset_description": "A warrior spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_behemoth",
+          "description": "Depth 6 – Colossal hulking entity, stone fused with ash, erupts fire from cracks in its back. Acts as a moving arena.",
+          "color": "#2F4F4F"
+        },
+        "weight": 10,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "ashen_behemoth",
+          "description": "Depth 6 – Colossal hulking entity, stone fused with ash, erupts fire from cracks in its back. Acts as a moving arena.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_cultist",
+          "description": "Depth 6 – Fanatical cultist with void‑etched staff, summons dark ash minions and casts lingering void zones.",
+          "color": "#1B1B1B"
+        },
+        "weight": 6,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "void_cultist",
+          "description": "Depth 6 – Fanatical cultist with void‑etched staff, summons dark ash minions and casts lingering void zones.",
+          "color": "#1B1B1B",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 1
+            },
+            "tileset_description": "A hooded figure holding a staff. Their hands are open."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_lich",
+          "description": "Depth 6 – Undead sorcerer, skull ablaze, raises ash skeletons and hurls necrotic fireballs.",
+          "color": "#4B0082"
+        },
+        "weight": 7,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "cinder_lich",
+          "description": "Depth 6 – Undead sorcerer, skull ablaze, raises ash skeletons and hurls necrotic fireballs.",
+          "color": "#4B0082",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 3
+            },
+            "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_harbinger",
+          "description": "Depth 6 – Elite commander, armor plated in obsidian ash, leads waves, uses coordinated charge and flame barrage.",
+          "color": "#0D0D0D"
+        },
+        "weight": 8,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "ashen_harbinger",
+          "description": "Depth 6 – Elite commander, armor plated in obsidian ash, leads waves, uses coordinated charge and flame barrage.",
+          "color": "#0D0D0D",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ash_ghoul",
+          "description": "Depth 2 – Rotting corpse covered in ash, claws smeared with ember. Attacks in small groups, leaping forward.",
+          "color": "#5C4033"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "ash_ghoul",
+          "description": "Depth 2 – Rotting corpse covered in ash, claws smeared with ember. Attacks in small groups, leaping forward.",
+          "color": "#5C4033",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "smoke_serpent",
+          "description": "Depth 3 – Long, serpentine creature made of swirling smoke and ash, darts quickly, spits fire breath.",
+          "color": "#3C3C3C"
+        },
+        "weight": 4,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "smoke_serpent",
+          "description": "Depth 3 – Long, serpentine creature made of swirling smoke and ash, darts quickly, spits fire breath.",
+          "color": "#3C3C3C",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 2
+            },
+            "tileset_description": "A demon wielding a trident. He is not wearing armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_mindflayer",
+          "description": "Depth 4 – Tall, gaunt figure with a cracked helm, projects psychic ash that confuses player movement.",
+          "color": "#2C2C2C"
+        },
+        "weight": 5,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "ashen_mindflayer",
+          "description": "Depth 4 – Tall, gaunt figure with a cracked helm, projects psychic ash that confuses player movement.",
+          "color": "#2C2C2C",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_harbinger",
+          "description": "Depth 4 – Elite spear‑wielder, armor encrusted with ember shards, thrusts in precise patterns, leaves ash trails.",
+          "color": "#7B3F00"
+        },
+        "weight": 7,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "cinder_harbinger",
+          "description": "Depth 4 – Elite spear‑wielder, armor encrusted with ember shards, thrusts in precise patterns, leaves ash trails.",
+          "color": "#7B3F00",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_shade",
+          "description": "Depth 5 – Shadowy silhouette with violet aura, teleports short distances, attacks with void‑charged daggers.",
+          "color": "#1A1A1A"
+        },
+        "weight": 6,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "void_shade",
+          "description": "Depth 5 – Shadowy silhouette with violet aura, teleports short distances, attacks with void‑charged daggers.",
+          "color": "#1A1A1A",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_colossus",
+          "description": "Depth 5 – Massive stone statue animated by ash, wields a huge hammer that creates shockwaves of flame.",
+          "color": "#3A3A3A"
+        },
+        "weight": 9,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "ashen_colossus",
+          "description": "Depth 5 – Massive stone statue animated by ash, wields a huge hammer that creates shockwaves of flame.",
+          "color": "#3A3A3A",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ember_lich_queen",
+          "description": "Depth 6 – Regal skeletal monarch wreathed in ember, summons ash minions and casts a devastating ember rain.",
+          "color": "#800000"
+        },
+        "weight": 9,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "ember_lich_queen",
+          "description": "Depth 6 – Regal skeletal monarch wreathed in ember, summons ash minions and casts a devastating ember rain.",
+          "color": "#800000",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_reaver",
+          "description": "Depth 6 – Armored assassin with void‑etched blades, dashes through ash, deals high burst damage.",
+          "color": "#111111"
+        },
+        "weight": 8,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "void_reaver",
+          "description": "Depth 6 – Armored assassin with void‑etched blades, dashes through ash, deals high burst damage.",
+          "color": "#111111",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_titan",
+          "description": "Depth 6 – Towering titan forged from molten ash, stomps cause eruptions, fires volleys of ember shards.",
+          "color": "#4B3621"
+        },
+        "weight": 10,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "cinder_titan",
+          "description": "Depth 6 – Towering titan forged from molten ash, stomps cause eruptions, fires volleys of ember shards.",
+          "color": "#4B3621",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_sentinel_elite",
+          "description": "Depth 4 – Upgraded stone sentinel with rotating blade arms, emits periodic fire bursts.",
+          "color": "#2B2B2B"
+        },
+        "weight": 8,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "ashen_sentinel_elite",
+          "description": "Depth 4 – Upgraded stone sentinel with rotating blade arms, emits periodic fire bursts.",
+          "color": "#2B2B2B",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_wisp",
+          "description": "Depth 1 – Tiny floating mote of void energy, drifts aimlessly, explodes on contact with low damage.",
+          "color": "#222222"
+        },
+        "weight": 1,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "void_wisp",
+          "description": "Depth 1 – Tiny floating mote of void energy, drifts aimlessly, explodes on contact with low damage.",
+          "color": "#222222",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_bat_swarm",
+          "description": "Depth 2 – Flocks of small ash‑covered bats, dive bomb in swarms, each bite spreads ash.",
+          "color": "#3D2B1F"
+        },
+        "weight": 2,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "cinder_bat_swarm",
+          "description": "Depth 2 – Flocks of small ash‑covered bats, dive bomb in swarms, each bite spreads ash.",
+          "color": "#3D2B1F",
+          "texture": {
+            "tileset_position": {
+              "x": 26,
+              "y": 8
+            },
+            "tileset_description": "A bat or a little demon. A flying creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_ironclad",
+          "description": "Depth 3 – Heavily plated infantry, moves slowly, shields with ash‑reinforced plates, counters with heavy thrusts.",
+          "color": "#5D5D5D"
+        },
+        "weight": 7,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "ashen_ironclad",
+          "description": "Depth 3 – Heavily plated infantry, moves slowly, shields with ash‑reinforced plates, counters with heavy thrusts.",
+          "color": "#5D5D5D",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      }
+    ]
+  },
+  "weapons": {
+    "items": [
+      {
+        "tile": {
+          "name": "ashen_dagger",
+          "description": "A short, rust‑stained blade whose edge is nicked from countless scrapes. The hilt is wrapped in cracked leather, and the pommel bears a soot‑blackened iron sphere that feels cold to the touch.",
+          "color": "#3a3a3a"
+        },
+        "rarity": 10,
+        "weight": 2,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "ashen_dagger",
+          "description": "A short, rust‑stained blade whose edge is nicked from countless scrapes. The hilt is wrapped in cracked leather, and the pommel bears a soot‑blackened iron sphere that feels cold to the touch.",
+          "color": "#3a3a3a",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cracked_shortsword",
+          "description": "A blunt, iron shortsword with a deep fissure running down the blade. Its guard is warped, giving the wielder a sense of fragile balance.",
+          "color": "#4b4b4b"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "cracked_shortsword",
+          "description": "A blunt, iron shortsword with a deep fissure running down the blade. Its guard is warped, giving the wielder a sense of fragile balance.",
+          "color": "#4b4b4b",
+          "texture": {
+            "tileset_position": {
+              "x": 34,
+              "y": 9
+            },
+            "tileset_description": "A simple iron sword with a straight blade. Appears to be of low rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rusted_mace",
+          "description": "A heavy mace whose head is pitted with rust. Each swing releases a faint clatter, echoing the cathedral's distant tolls.",
+          "color": "#5c5c5c"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusted_mace",
+          "description": "A heavy mace whose head is pitted with rust. Each swing releases a faint clatter, echoing the cathedral's distant tolls.",
+          "color": "#5c5c5c",
+          "texture": {
+            "tileset_position": {
+              "x": 39,
+              "y": 3
+            },
+            "tileset_description": "Large iron shield with a protrusion in the middle."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "bent_spear",
+          "description": "A long iron spear whose tip has bent inward, forcing the user to thrust with a wary, deliberate motion.",
+          "color": "#4a4a4a"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "bent_spear",
+          "description": "A long iron spear whose tip has bent inward, forcing the user to thrust with a wary, deliberate motion.",
+          "color": "#4a4a4a",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "charcoal_bow",
+          "description": "A recurved bow made of darkened wood, its surface mottled with ash. The string sings a low, mournful note when drawn.",
+          "color": "#2e2e2e"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "charcoal_bow",
+          "description": "A recurved bow made of darkened wood, its surface mottled with ash. The string sings a low, mournful note when drawn.",
+          "color": "#2e2e2e",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 6
+            },
+            "tileset_description": "A rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "flint_throwing_knife",
+          "description": "A jagged knife with a flint tip, designed to be hurled. It leaves a brief spark of ember as it flies.",
+          "color": "#3d3d3d"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "flint_throwing_knife",
+          "description": "A jagged knife with a flint tip, designed to be hurled. It leaves a brief spark of ember as it flies.",
+          "color": "#3d3d3d",
+          "texture": {
+            "tileset_position": {
+              "x": 34,
+              "y": 6
+            },
+            "tileset_description": "Simple iron dagger."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sooty_crossbow",
+          "description": "A compact crossbow whose wooden stock is blackened by soot. Its bolts are crudely fashioned from broken stone.",
+          "color": "#3f3f3f"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "sooty_crossbow",
+          "description": "A compact crossbow whose wooden stock is blackened by soot. Its bolts are crudely fashioned from broken stone.",
+          "color": "#3f3f3f",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 5
+            },
+            "tileset_description": "Medium-sized wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_hand_axe",
+          "description": "A small axe with a blade dulled by ash. The haft is wrapped in frayed cloth, giving a gritty grip.",
+          "color": "#4c4c4c"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "ashen_hand_axe",
+          "description": "A small axe with a blade dulled by ash. The haft is wrapped in frayed cloth, giving a gritty grip.",
+          "color": "#4c4c4c",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 8
+            },
+            "tileset_description": "Small, one-handed axe with only one blade at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ember_touched_torch",
+          "description": "A torch whose flame flickers with a strange violet hue, casting wavering shadows that seem to move of their own accord.",
+          "color": "#6a2e2e"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ember_touched_torch",
+          "description": "A torch whose flame flickers with a strange violet hue, casting wavering shadows that seem to move of their own accord.",
+          "color": "#6a2e2e",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 3
+            },
+            "tileset_description": "Medium-sized wooden torch."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "broken_warhammer",
+          "description": "A massive hammer whose head is cracked, exposing the raw iron core. Each impact reverberates through the wielder's bones.",
+          "color": "#5a5a5a"
+        },
+        "rarity": 2,
+        "weight": 6,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "broken_warhammer",
+          "description": "A massive hammer whose head is cracked, exposing the raw iron core. Each impact reverberates through the wielder's bones.",
+          "color": "#5a5a5a",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "worn_longbow",
+          "description": "An aged longbow with a splintered limb. The grip is worn smooth, offering a familiar, almost nostalgic feel.",
+          "color": "#3b3b3b"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "worn_longbow",
+          "description": "An aged longbow with a splintered limb. The grip is worn smooth, offering a familiar, almost nostalgic feel.",
+          "color": "#3b3b3b",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 6
+            },
+            "tileset_description": "Simple bow of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "lead_filled_slingshot",
+          "description": "A crude slingshot reinforced with lead shot. Its elastic band creaks ominously when pulled back.",
+          "color": "#2c2c2c"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "lead_filled_slingshot",
+          "description": "A crude slingshot reinforced with lead shot. Its elastic band creaks ominously when pulled back.",
+          "color": "#2c2c2c",
+          "texture": {
+            "tileset_position": {
+              "x": 39,
+              "y": 5
+            },
+            "tileset_description": "Large wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_staff",
+          "description": "A simple wooden staff blackened by ash, its tip etched with a faint ember rune that glows weakly when channeling mana.",
+          "color": "#2f2f2f"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ashen_staff",
+          "description": "A simple wooden staff blackened by ash, its tip etched with a faint ember rune that glows weakly when channeling mana.",
+          "color": "#2f2f2f",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corroded_flail",
+          "description": "A spiked flail whose chain is rusted and its ball pitted. The swing produces a hollow, echoing clang.",
+          "color": "#5d5d5d"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "corroded_flail",
+          "description": "A spiked flail whose chain is rusted and its ball pitted. The swing produces a hollow, echoing clang.",
+          "color": "#5d5d5d",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "iron_pike",
+          "description": "A towering iron pike, its shaft reinforced with steel bands. It feels unwieldy yet offers reach beyond most weapons.",
+          "color": "#4e4e4e"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "iron_pike",
+          "description": "A towering iron pike, its shaft reinforced with steel bands. It feels unwieldy yet offers reach beyond most weapons.",
+          "color": "#4e4e4e",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "veil_bound_rapier",
+          "description": "A slender rapier forged from dark steel, its blade shimmering with a faint, veiled aura that seems to shift when observed.",
+          "color": "#212121"
+        },
+        "rarity": 6,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "veil_bound_rapier",
+          "description": "A slender rapier forged from dark steel, its blade shimmering with a faint, veiled aura that seems to shift when observed.",
+          "color": "#212121",
+          "texture": {
+            "tileset_position": {
+              "x": 32,
+              "y": 6
+            },
+            "tileset_description": "Iron dagger of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "embersteel_greatsword",
+          "description": "A massive greatsword whose blade is tempered with embersteel, radiating a steady, warm glow that steadies the wielder's hand.",
+          "color": "#8b2e2e"
+        },
+        "rarity": 6,
+        "weight": 7,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "embersteel_greatsword",
+          "description": "A massive greatsword whose blade is tempered with embersteel, radiating a steady, warm glow that steadies the wielder's hand.",
+          "color": "#8b2e2e",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 8
+            },
+            "tileset_description": "High-rarity greatsword. Detailed hilt."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashenfire_crossbow",
+          "description": "An ornate crossbow inlaid with ash‑etched runes. Its bolts ignite briefly upon release, leaving a trail of ember.",
+          "color": "#3a1f1f"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ashenfire_crossbow",
+          "description": "An ornate crossbow inlaid with ash‑etched runes. Its bolts ignite briefly upon release, leaving a trail of ember.",
+          "color": "#3a1f1f",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 5
+            },
+            "tileset_description": "Medium-sized wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_etched_longbow",
+          "description": "A longbow carved from a blackened wood that seems to absorb light. Its string hums with a low, void‑like resonance.",
+          "color": "#1a1a1a"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "void_etched_longbow",
+          "description": "A longbow carved from a blackened wood that seems to absorb light. Its string hums with a low, void‑like resonance.",
+          "color": "#1a1a1a",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 6
+            },
+            "tileset_description": "A rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_wrapped_warhammer",
+          "description": "A warhammer whose head is wrapped in hardened cinder, each strike releasing a puff of ash and a crackle of flame.",
+          "color": "#5e2b2b"
+        },
+        "rarity": 6,
+        "weight": 6,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "cinder_wrapped_warhammer",
+          "description": "A warhammer whose head is wrapped in hardened cinder, each strike releasing a puff of ash and a crackle of flame.",
+          "color": "#5e2b2b",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "soul_shard_wand",
+          "description": "A slender wand crowned with a floating soul‑shard that pulses with faint blue light, resonating with the user's mana.",
+          "color": "#2b3e5a"
+        },
+        "rarity": 6,
+        "weight": 2,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "soul_shard_wand",
+          "description": "A slender wand crowned with a floating soul‑shard that pulses with faint blue light, resonating with the user's mana.",
+          "color": "#2b3e5a",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ash_infused_polearm",
+          "description": "A polearm whose spearhead is fused with ash‑coated steel, giving it a heavy, smoky heft that leaves a trail of ash with each thrust.",
+          "color": "#4a2c2c"
+        },
+        "rarity": 6,
+        "weight": 5,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "ash_infused_polearm",
+          "description": "A polearm whose spearhead is fused with ash‑coated steel, giving it a heavy, smoky heft that leaves a trail of ash with each thrust.",
+          "color": "#4a2c2c",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 5
+            },
+            "tileset_description": "Iron spear with two blades at the end."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "charred_recurve_bow",
+          "description": "A recurve bow blackened by fire, its limbs still warm. Drawing it releases a scent of burnt timber and ash.",
+          "color": "#3c1c1c"
+        },
+        "rarity": 6,
+        "weight": 4,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "charred_recurve_bow",
+          "description": "A recurve bow blackened by fire, its limbs still warm. Drawing it releases a scent of burnt timber and ash.",
+          "color": "#3c1c1c",
+          "texture": {
+            "tileset_position": {
+              "x": 44,
+              "y": 3
+            },
+            "tileset_description": "Wooden torch with extinguished flame."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "gilded_dusk_dagger",
+          "description": "A dagger with a hilt of tarnished gold and a blade that catches the dying light, giving the impression of a fleeting dusk.",
+          "color": "#7b5a2c"
+        },
+        "rarity": 6,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "gilded_dusk_dagger",
+          "description": "A dagger with a hilt of tarnished gold and a blade that catches the dying light, giving the impression of a fleeting dusk.",
+          "color": "#7b5a2c",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 6
+            },
+            "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "sanctum_sentinel_halberd",
+          "description": "A towering halberd forged for the cathedral’s elite guards. Its axe head bears a sigil of the First Ember, pulsing faintly.",
+          "color": "#3d2b2b"
+        },
+        "rarity": 6,
+        "weight": 6,
+        "mana_cost": 2,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "sanctum_sentinel_halberd",
+          "description": "A towering halberd forged for the cathedral’s elite guards. Its axe head bears a sigil of the First Ember, pulsing faintly.",
+          "color": "#3d2b2b",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 8
+            },
+            "tileset_description": "High-rarity greatsword. Detailed hilt."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "emberheart_blade",
+          "description": "A legendary sword whose blade is a solid shard of the First Ember, forever burning with a pure, white flame that never wanes.",
+          "color": "#ffcc66"
+        },
+        "rarity": 9,
+        "weight": 4,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "emberheart_blade",
+          "description": "A legendary sword whose blade is a solid shard of the First Ember, forever burning with a pure, white flame that never wanes.",
+          "color": "#ffcc66",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 8
+            },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ashen_core_cannon",
+          "description": "A massive, experimental cannon mounted on a wheeled carriage. Its barrel is lined with ash‑coated steel and fires volatile ember‑charged rounds.",
+          "color": "#4d1f1f"
+        },
+        "rarity": 9,
+        "weight": 9,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "ashen_core_cannon",
+          "description": "A massive, experimental cannon mounted on a wheeled carriage. Its barrel is lined with ash‑coated steel and fires volatile ember‑charged rounds.",
+          "color": "#4d1f1f",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 3
+            },
+            "tileset_description": "Large iron shield with visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "veiled_whisper_staff",
+          "description": "An ancient staff wrapped in tattered veils. At its tip swirls a vortex of ash and whispers, allowing the wielder to bend the Veil’s will.",
+          "color": "#2a2a2a"
+        },
+        "rarity": 9,
+        "weight": 3,
+        "mana_cost": 8,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "veiled_whisper_staff",
+          "description": "An ancient staff wrapped in tattered veils. At its tip swirls a vortex of ash and whispers, allowing the wielder to bend the Veil’s will.",
+          "color": "#2a2a2a",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "first_ember_bow",
+          "description": "A bow crafted from the unbroken core of the First Ember itself. Its string hums with raw, primordial power, launching arrows that blaze with holy fire.",
+          "color": "#ff9966"
+        },
+        "rarity": 9,
+        "weight": 5,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "first_ember_bow",
+          "description": "A bow crafted from the unbroken core of the First Ember itself. Its string hums with raw, primordial power, launching arrows that blaze with holy fire.",
+          "color": "#ff9966",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 6
+            },
+            "tileset_description": "Simple bow of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cathedrals_dirge_greatsword",
+          "description": "A colossal greatsword named after the cathedral’s mournful bells. Its blade is etched with lamenting verses that reverberate with each swing.",
+          "color": "#5b3a3a"
+        },
+        "rarity": 9,
+        "weight": 8,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "cathedrals_dirge_greatsword",
+          "description": "A colossal greatsword named after the cathedral’s mournful bells. Its blade is etched with lamenting verses that reverberate with each swing.",
+          "color": "#5b3a3a",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 8
+            },
+            "tileset_description": "High-rarity greatsword. Detailed hilt."
+          }
+        }
+      }
+    ]
+  },
+  "final_objective": {
+    "tile": {
+      "name": "emberheart_shard",
+      "description": "A pulsating crystal the size of a clenched fist, its facets glow with an inner fire that flickers between amber and violet, casting dancing shadows. Etched runes pulse with a faint, desperate light, and the air around it hums with the echo of a forgotten promise.",
+      "color": "#FF4500"
+    },
+    "back_history": "The Emberheart Shard, a crystalline core of the original First Ember, was torn from the flame during the Binding of the Ashen Covenant. It became the seed of the Ashen Veil, its pulse corrupting the Sanctum's foundations. Legends say that if the shard is reclaimed and brought back to the surface, its pure flame can either reseal the Veil or reignite the world. The shard cannot remain in the depths: its presence fuels the Ashen Core, and each heartbeat spreads ash that seals exits, making escape impossible. The player must seize the Emberheart Shard and carry it out before the Veil consumes it, for only by returning it can the broken Ember be reforged and the world saved.",
+    "tile_with_texture": {
+      "name": "emberheart_shard",
+      "description": "A pulsating crystal the size of a clenched fist, its facets glow with an inner fire that flickers between amber and violet, casting dancing shadows. Etched runes pulse with a faint, desperate light, and the air around it hums with the echo of a forgotten promise.",
+      "color": "#FF4500",
+      "texture": {
+        "tileset_position": {
+          "x": 35,
+          "y": 4
+        },
+        "tileset_description": "A staff with a gemstone at the tip."
+      }
+    }
+  }
+}

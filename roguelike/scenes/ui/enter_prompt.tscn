@@ -1,0 +1,105 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds7bo617filsf"]
+
+[ext_resource type="Script" uid="uid://dhg1s5f4clveo" path="res://scenes/ui/enter_prompt.gd" id="1_rc8ge"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13vjb"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.2520276, 0.25202766, 0.25202763, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rc8ge"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="EnterPrompt" type="Control" node_paths=PackedStringArray("loading_panel", "input_text", "generate_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rc8ge")
+loading_panel = NodePath("Loading")
+input_text = NodePath("Input/MarginContainer/VBoxContainer/CodeEdit")
+generate_button = NodePath("Input/MarginContainer/VBoxContainer/Button")
+
+[node name="Input" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Input"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Input/MarginContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="Input/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35.205)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_13vjb")
+
+[node name="Label" type="Label" parent="Input/MarginContainer/VBoxContainer/Panel"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 760.0
+offset_bottom = 27.0
+text = "Enter With A Prompt"
+horizontal_alignment = 1
+
+[node name="CodeEdit" type="CodeEdit" parent="Input/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Input/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 44.595)
+layout_mode = 2
+text = "Create"
+
+[node name="Loading" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rc8ge")
+
+[node name="Label" type="Label" parent="Loading"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Loading..."
+horizontal_alignment = 1
+vertical_alignment = 1

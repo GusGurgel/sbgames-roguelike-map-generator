@@ -1,0 +1,400 @@
+[gd_scene load_steps=11 format=3 uid="uid://bwtdbxpqslxmb"]
+
+[ext_resource type="Script" uid="uid://hdlm0wo67drn" path="res://scenes/ui/game_ui.gd" id="1_gwk6t"]
+[ext_resource type="PackedScene" uid="uid://cfeg45rhlroly" path="res://scenes/ui/debug_ui.tscn" id="2_xjfbv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.3647059, 0.105882354, 0.10980392, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5qli"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.827451, 0.4392157, 0.4509804, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.39215687, 0.50980395, 0.6784314, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.7372549, 0.8, 0.8627451, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bma8u"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.94509804, 0.7607843, 0.19607843, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fct72"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.98039216, 0.90588236, 0.6745098, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xjfbv"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 0.19215687)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwk6t"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.18359044, 0.18359044, 0.18359044, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="GameUI" type="HBoxContainer" node_paths=PackedStringArray("prompt", "debug_ui", "inventory", "tab_container", "turn_value_label", "health_progress_bar", "health_label", "mana_progress_bar", "mana_label", "level_progress_bar", "level_label", "melee_weapon_label", "range_weapon_label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_gwk6t")
+prompt = NodePath("TabContainer/Prompts/PromptBackgroundMarginContainer/PromptBackground/PromptMarginContainer/PromptRichTextLabel")
+debug_ui = NodePath("TabContainer/Debug")
+inventory = NodePath("TabContainer/Invetory/Inventory")
+tab_container = NodePath("TabContainer")
+turn_value_label = NodePath("Status/MarginContainer/Panel/HBoxContainer/TurnValueLabel")
+health_progress_bar = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerHealthHBoxContainer/PlayerHealthProgressBar")
+health_label = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerHealthHBoxContainer/PlayerHealthLabel")
+mana_progress_bar = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerManaHBoxContainer/PlayerManaProgressBar")
+mana_label = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerManaHBoxContainer/PlayerManaLabel")
+level_progress_bar = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerLevelHBoxContainer/PlayerLevelProgressBar")
+level_label = NodePath("Status/LeftMargin/Left/ValuesVBoxContainer/PlayerLevelHBoxContainer/PlayerLevelLabel")
+melee_weapon_label = NodePath("Status/MarginContainer2/Panel/HBoxContainer/MeleeWeaponValue")
+range_weapon_label = NodePath("Status/MarginContainer3/Panel/HBoxContainer/RangeWeaponValue")
+
+[node name="Status" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeftMargin" type="MarginContainer" parent="Status"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Left" type="HBoxContainer" parent="Status/LeftMargin"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AttributesMarginContainer" type="MarginContainer" parent="Status/LeftMargin/Left"]
+layout_mode = 2
+theme_override_constants/margin_right = 5
+
+[node name="AttributesVBoxContainer" type="VBoxContainer" parent="Status/LeftMargin/Left/AttributesMarginContainer"]
+custom_minimum_size = Vector2(51.87, 0)
+layout_mode = 2
+
+[node name="HealthLabel" type="Label" parent="Status/LeftMargin/Left/AttributesMarginContainer/AttributesVBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "Health"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ManaLabel" type="Label" parent="Status/LeftMargin/Left/AttributesMarginContainer/AttributesVBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "Mana"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="Status/LeftMargin/Left/AttributesMarginContainer/AttributesVBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "Level"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ValuesVBoxContainer" type="VBoxContainer" parent="Status/LeftMargin/Left"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayerHealthHBoxContainer" type="HBoxContainer" parent="Status/LeftMargin/Left/ValuesVBoxContainer"]
+layout_mode = 2
+
+[node name="PlayerHealthProgressBar" type="ProgressBar" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerHealthHBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/background = SubResource("StyleBoxFlat_tbgi4")
+theme_override_styles/fill = SubResource("StyleBoxFlat_o5qli")
+value = 50.0
+show_percentage = false
+
+[node name="PlayerHealthLabel" type="Label" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerHealthHBoxContainer"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "50/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerManaHBoxContainer" type="HBoxContainer" parent="Status/LeftMargin/Left/ValuesVBoxContainer"]
+layout_mode = 2
+
+[node name="PlayerManaProgressBar" type="ProgressBar" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerManaHBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/background = SubResource("StyleBoxFlat_jyhfs")
+theme_override_styles/fill = SubResource("StyleBoxFlat_0wfyh")
+value = 50.0
+show_percentage = false
+
+[node name="PlayerManaLabel" type="Label" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerManaHBoxContainer"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "50/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayerLevelHBoxContainer" type="HBoxContainer" parent="Status/LeftMargin/Left/ValuesVBoxContainer"]
+layout_mode = 2
+
+[node name="PlayerLevelProgressBar" type="ProgressBar" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerLevelHBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/background = SubResource("StyleBoxFlat_bma8u")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fct72")
+value = 50.0
+show_percentage = false
+
+[node name="PlayerLevelLabel" type="Label" parent="Status/LeftMargin/Left/ValuesVBoxContainer/PlayerLevelHBoxContainer"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "50/100 (1)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Status"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Panel" type="Panel" parent="Status/MarginContainer"]
+custom_minimum_size = Vector2(0, 34.26)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_xjfbv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Status/MarginContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TurnLabel" type="Label" parent="Status/MarginContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "Turn:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TurnValueLabel" type="Label" parent="Status/MarginContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "2003"
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="Status"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Panel" type="Panel" parent="Status/MarginContainer2"]
+custom_minimum_size = Vector2(0, 34.26)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_xjfbv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Status/MarginContainer2/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MeleeWeaponLabel" type="Label" parent="Status/MarginContainer2/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "MeleeWeapon:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="MeleeWeaponValue" type="Label" parent="Status/MarginContainer2/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "(None)"
+vertical_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="Status"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Panel" type="Panel" parent="Status/MarginContainer3"]
+custom_minimum_size = Vector2(0, 34.26)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_xjfbv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Status/MarginContainer3/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RangeWeaponLabel" type="Label" parent="Status/MarginContainer3/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "RangeWeapon"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="RangeWeaponValue" type="Label" parent="Status/MarginContainer3/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+text = "(None)"
+vertical_alignment = 1
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+current_tab = 0
+
+[node name="Prompts" type="VBoxContainer" parent="TabContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_tab_index = 0
+
+[node name="PromptBackgroundMarginContainer" type="MarginContainer" parent="TabContainer/Prompts"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="PromptBackground" type="Panel" parent="TabContainer/Prompts/PromptBackgroundMarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_gwk6t")
+
+[node name="PromptMarginContainer" type="MarginContainer" parent="TabContainer/Prompts/PromptBackgroundMarginContainer/PromptBackground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="PromptRichTextLabel" type="RichTextLabel" parent="TabContainer/Prompts/PromptBackgroundMarginContainer/PromptBackground/PromptMarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "1
+2
+3
+4
+5
+"
+scroll_following = true
+
+[node name="Invetory" type="ScrollContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Inventory" type="VBoxContainer" parent="TabContainer/Invetory"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Debug" parent="TabContainer" instance=ExtResource("2_xjfbv")]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2

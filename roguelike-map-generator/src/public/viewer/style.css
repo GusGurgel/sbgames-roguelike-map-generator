@@ -1,0 +1,224 @@
+:root {
+    --bg-color: #f0f2f5; /* Cinza bem claro para o fundo da página */
+    --card-bg: #ffffff;  /* Branco para os cartões e área principal */
+    --text-main: #2d2d2d; /* Cinza escuro para o texto (melhor que preto puro) */
+    --text-muted: #6c757d; /* Cinza médio para textos secundários */
+    --accent: #0066cc; /* Azul levemente mais escuro para melhor contraste */
+    --border: #dee2e6; /* Cinza claro para bordas */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Controles (não aparecem na impressão) */
+header.no-print {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.upload-btn {
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.upload-btn:hover {
+    background-color: #dde0e3;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+.save-btn {
+    background-color: var(--accent);
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #0052a3;
+}
+
+.save-btn:disabled {
+    background-color: #cccccc;
+    color: #888;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.status {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* Área de Captura (O visual do AssetBundle) */
+#capture-area {
+    background-color: var(--card-bg);
+    width: 800px; /* Largura fixa para garantir consistência na imagem */
+    min-height: 600px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08); /* Sombra mais suave para tema claro */
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Header do Bundle */
+#bundle-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+}
+
+#bundle-title {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+#bundle-desc {
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.meta-tag {
+    display: inline-block;
+    background: #f1f3f5;
+    color: #495057;
+    border: 1px solid var(--border);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+/* Seções */
+.card-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-section h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Layout Grid */
+.column-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Componentes de Item */
+.item-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8f9fa; /* Fundo cinza bem claro */
+    border: 1px solid var(--border); /* Adicionada borda para destaque */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.item-card.vertical {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.tile-canvas {
+    image-rendering: pixelated; /* Importante para Pixel Art */
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15)); /* Sombra mais fraca */
+}
+
+.item-info h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.item-info span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Grid Lists (Levels) */
+.grid-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.level-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; /* Nome, Wall, Floor */
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid var(--border);
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+.mini-tile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Grid Icons (Weapons/Enemies) */
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+}

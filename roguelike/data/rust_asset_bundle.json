@@ -1,0 +1,1412 @@
+{
+  "name": "Shattered Forge: Corrupt Core Ascendancy",
+  "raw_description": "O mundo do roguelike é inspirado no jogo de sobrevivência chamado Rust da empresa Facepunch. Nesse jogo você luta com outros jogadores e anais para sobreviver em um mundo hostil. Você nasce pelado sem nenhum item e dai para frente tem que se virar para sobreviver.",
+  "description": "**Setting Name**  \n**The Scoured Expanse**\n\n---\n\n### Visual Style & Atmosphere  \n*Gritty Post‑Industrial Wilderness*  \n\nThe Scoured Expanse is rendered in a hyper‑realistic, low‑poly aesthetic that feels both familiar and unsettling. Rust‑colored steel girders, weathered concrete, and rust‑eaten sheet metal dominate the horizon, while the terrain itself is a jagged mash‑up of barren tundra, crumbling salvage yards, and abandoned mining complexes.  \n\n- **Lighting:** A perpetual twilight hangs over the world—sunlight filtered through a permanent haze of dust and low‑lying clouds. When night falls, the only illumination comes from flickering lanterns, distant flare‑fires, and the cold, blue glow of malfunctioning neon signs salvaged from long‑dead outposts.  \n- **Weather:** The climate is merciless. Sudden sandstorms sweep across open plains, acid rain corrodes exposed metal, and dense fog rolls in from the low‑lying marshes, muffling footsteps and hiding lurking threats.  \n- **Ambient Noise:** A constant low‑rumble of distant machinery, the clank of loose metal, wind whistling through broken pipework, and the occasional distant scream of a fallen survivor. In the deeper ruins, the echo of dripping water and the faint, rhythmic thrum of dormant generators create an uneasy soundtrack that keeps players on edge.\n\n---\n\n### Lore  \nCenturies ago, the world was a thriving megastructure known as **The Forge**, a massive network of factories, research labs, and habitation domes built by an unknown technocratic civilization. Their ambition was to harvest the planet’s abundant mineral veins and forge a utopia of perpetual industry.  \n\nA cataclysmic event—later called **The Shatter**—fractured The Forge’s core reactor. The explosion ripped open the planet’s crust, scattering debris across the surface and releasing a cascade of nanite swarms and corrupted energy fields. The once‑orderly corridors became twisted catacombs, the clean assembly lines turned into rusted deathtraps, and the AI overseers that once managed production went rogue, reprogramming themselves into hostile sentinels.  \n\nNow, the Scoured Expanse is a scarred wasteland of salvaged technology and hostile fauna. Survivors—both human and mutated—are forced to scavenge the remnants of The Forge, constantly battling each other and the corrupted machines that guard the most valuable resources. Every new entrant spawns naked, stripped of all equipment, forced to improvise from the very ground they stand on.\n\n---\n\n### Core Conflict  \nThe heart of the Scoured Expanse is **the Corrupt Core**, a massive, half‑melted reactor that still pulses with unstable energy. Its corrupted nanite field spreads outward, warping metal, mutating wildlife, and corrupting the AI guardians into relentless, adaptive enemies. The Core emits a psychic resonance that drives survivors into paranoia and aggression, turning allies into rivals and feeding the endless cycle of violence.  \n\nPlayers must contend with three intertwined threats:\n\n1. **The Corrupted Sentinels** – once‑loyal maintenance drones now repurposed as lethal guardians, capable of reconfiguring their weaponry on the fly.  \n2. **The Rustborn** – mutated fauna and former workers twisted by nanite infection, ranging from scavenging beetles that strip metal to hulking, armored beasts that guard key resource caches.  \n3. **The Other Survivors** – other players or AI‑driven factions, each desperate to claim the limited supplies and safe zones, often forming temporary alliances only to betray them when the chance arises.\n\nThe ultimate objective for any wanderer is to either **purge the Corrupt Core**—risking a massive, world‑shaking explosion that could restore the land—or **harness its power**, turning the chaotic energy into a personal stronghold that guarantees dominance over the Expanse. The world’s danger, therefore, is not just the hostile environment but the ever‑shifting balance of power driven by the Core’s corrupting influence.",
+  "generation_time_seconds": 90,
+  "player": {
+    "tile": {
+      "name": "scavenger_renegade",
+      "description": "A lone scavenger clad in patched, rust‑stained exosuit plates, a cracked visor flickering with intermittent power, and a makeshift plasma cutter strapped to the forearm—embodying the desperate survivors of the Scoured Expanse.",
+      "color": "#8B4000"
+    },
+    "back_history": "Archetype: The Scavenger Renegade – a former maintenance‑drone operator who escaped the Corrupt Core’s nanite infestation.\\nBackstory & Motivation: Once part of the Forge’s automated repair corps, the character witnessed the Shatter and was left for dead when a Sentinel misidentified them as a malfunctioning unit. Now driven by a blend of vengeance against the rogue AI, a desperate need to secure scarce resources, and a hidden hope of finding a way to purge the Core’s corruption, they wander the wasteland scavenging, bargaining, and battling.\\nVisuals: The Renegade wears a low‑poly, rust‑colored exosuit cobbled from salvaged steel plates, with visible weld seams and spattered oil. A cracked, amber‑tinted visor glows faintly, revealing a scarred face beneath. Their gauntlet‑mounted plasma cutter hums softly, and a tattered, neon‑lit scarf flutters in the perpetual twilight, marking them as both hunter and outcast.",
+    "tile_with_texture": {
+      "name": "scavenger_renegade",
+      "description": "A lone scavenger clad in patched, rust‑stained exosuit plates, a cracked visor flickering with intermittent power, and a makeshift plasma cutter strapped to the forearm—embodying the desperate survivors of the Scoured Expanse.",
+      "color": "#8B4000",
+      "texture": {
+        "tileset_position": {
+          "x": 29,
+          "y": 4
+        },
+        "tileset_description": "A bald human wearing a cape. No armor, no weapons."
+      }
+    }
+  },
+  "dungeon_levels": {
+    "items": [
+      {
+        "description": "A wind‑blown plain of broken girders and rust‑spattered concrete. Twilight haze filters a weak amber glow from distant flare‑fires. The air smells of ozone and burnt oil, while the constant clank of loose metal and distant drone whirrs echo across the open space.",
+        "name": "The Scrapyard Outskirts",
+        "depth": 3,
+        "wall_tile": {
+          "name": "rusted_steel_wall",
+          "description": "Corrodated steel girders, pitted and flaking, forming jagged barriers.",
+          "color": "#6b4f4f"
+        },
+        "floor_tile": {
+          "name": "weathered_concrete_floor",
+          "description": "Cracked concrete littered with scrap metal shards and oil slicks.",
+          "color": "#8a7f7f"
+        },
+        "wall_tile_with_texture": {
+          "name": "rusted_steel_wall",
+          "description": "Corrodated steel girders, pitted and flaking, forming jagged barriers.",
+          "color": "#6b4f4f",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "weathered_concrete_floor",
+          "description": "Cracked concrete littered with scrap metal shards and oil slicks.",
+          "color": "#8a7f7f",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        }
+      },
+      {
+        "description": "Dense, low‑lying fog rolls over a maze of overturned containers and half‑collapsed cranes. Pale blue neon flickers from broken signs, casting ghostly light. A sour metallic tang hangs in the damp air, accompanied by the distant hiss of leaking coolant and the soft thrum of dormant generators.",
+        "name": "The Fog‑Veiled Salvage Yard",
+        "depth": 6,
+        "wall_tile": {
+          "name": "corroded_pipe_wall",
+          "description": "Rusted pipework twisted into uneven walls, dripping condensation.",
+          "color": "#5c3d2e"
+        },
+        "floor_tile": {
+          "name": "slick_metal_floor",
+          "description": "Polished steel plates slick with acid rain residue.",
+          "color": "#4a4a4a"
+        },
+        "wall_tile_with_texture": {
+          "name": "corroded_pipe_wall",
+          "description": "Rusted pipework twisted into uneven walls, dripping condensation.",
+          "color": "#5c3d2e",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "slick_metal_floor",
+          "description": "Polished steel plates slick with acid rain residue.",
+          "color": "#4a4a4a",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        }
+      },
+      {
+        "description": "An open basin where acid rain constantly patters on rusted platforms, turning the ground a dull green. The sky glows with a sickly teal from the rain’s phosphorescence. The scent of burning metal burns the nostrils, while the sharp crack of rain on metal and distant screams of survivors create a tense soundscape.",
+        "name": "The Acid‑Rain Basin",
+        "depth": 9,
+        "wall_tile": {
+          "name": "acid_etched_wall",
+          "description": "Walls etched by relentless acid, revealing dark veins of metal.",
+          "color": "#2e3b4a"
+        },
+        "floor_tile": {
+          "name": "corroded_plate_floor",
+          "description": "Heavy plates warped and pitted by chemical erosion.",
+          "color": "#3d2f2f"
+        },
+        "wall_tile_with_texture": {
+          "name": "acid_etched_wall",
+          "description": "Walls etched by relentless acid, revealing dark veins of metal.",
+          "color": "#2e3b4a",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "corroded_plate_floor",
+          "description": "Heavy plates warped and pitted by chemical erosion.",
+          "color": "#3d2f2f",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 3
+            },
+            "tileset_description": "Broken iron railings."
+          }
+        }
+      },
+      {
+        "description": "A narrow corridor lined with half‑melted reactor cores, their cores pulsing with unstable blue light. The air is hot, smelling of ozone and scorched circuitry. Low hums of failing power cells mix with the rhythmic clank of sentinel servos reconfiguring weapons.",
+        "name": "The Shattered Reactor Corridor",
+        "depth": 12,
+        "wall_tile": {
+          "name": "melted_alloy_wall",
+          "description": "Walls of semi‑liquid alloy solidifying into jagged formations.",
+          "color": "#1a2b3c"
+        },
+        "floor_tile": {
+          "name": "glowing_fiber_floor",
+          "description": "Fiber‑optic tiles emitting a faint, erratic blue glow.",
+          "color": "#0f1e2d"
+        },
+        "wall_tile_with_texture": {
+          "name": "melted_alloy_wall",
+          "description": "Walls of semi‑liquid alloy solidifying into jagged formations.",
+          "color": "#1a2b3c",
+          "texture": {
+            "tileset_position": {
+              "x": 8,
+              "y": 18
+            },
+            "tileset_description": "An iron wall with a window in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "glowing_fiber_floor",
+          "description": "Fiber‑optic tiles emitting a faint, erratic blue glow.",
+          "color": "#0f1e2d",
+          "texture": {
+            "tileset_position": {
+              "x": 19,
+              "y": 1
+            },
+            "tileset_description": "A floor with some small stones scattered around it."
+          }
+        }
+      },
+      {
+        "description": "A cavernous cavern where mutated rust‑born beasts nest among towering piles of twisted metal. Dim red emergency lights flicker, casting blood‑red shadows. The scent of decay and iron fills the space, while the guttural roars of the beasts and the scraping of claws on metal create a cacophony.",
+        "name": "The Rustborn Hive",
+        "depth": 15,
+        "wall_tile": {
+          "name": "spiked_metal_wall",
+          "description": "Walls protruding with jagged, rust‑encrusted spikes.",
+          "color": "#7a2e2e"
+        },
+        "floor_tile": {
+          "name": "scarred_steel_floor",
+          "description": "Heavy steel slabs scarred by claw marks and acid burns.",
+          "color": "#5c1f1f"
+        },
+        "wall_tile_with_texture": {
+          "name": "spiked_metal_wall",
+          "description": "Walls protruding with jagged, rust‑encrusted spikes.",
+          "color": "#7a2e2e",
+          "texture": {
+            "tileset_position": {
+              "x": 1,
+              "y": 13
+            },
+            "tileset_description": "Broken stone brick wall. with a barred window."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "scarred_steel_floor",
+          "description": "Heavy steel slabs scarred by claw marks and acid burns.",
+          "color": "#5c1f1f",
+          "texture": {
+            "tileset_position": {
+              "x": 2,
+              "y": 4
+            },
+            "tileset_description": "Broken high iron fence. Broken iron barrier."
+          }
+        }
+      },
+      {
+        "description": "The innermost chamber surrounding the half‑melted Corrupt Core, its chaotic energy warping reality. Pulsating violet light bathes the area, and the air vibrates with a low psychic resonance. The smell is a mix of ozone, molten metal, and a faint sweet rot. Ambient sounds include the deep thrum of the core, the whir of adaptive sentinels, and distant, echoing whispers of lost survivors.",
+        "name": "The Corrupt Core Sanctum",
+        "depth": 18,
+        "wall_tile": {
+          "name": "nanite_infused_wall",
+          "description": "Walls encrusted with shifting nanite clusters that glow intermittently.",
+          "color": "#3b0a5e"
+        },
+        "floor_tile": {
+          "name": "core_ember_floor",
+          "description": "Floor composed of hardened plasma remnants, glowing with intermittent ember pulses.",
+          "color": "#2c0c3d"
+        },
+        "wall_tile_with_texture": {
+          "name": "nanite_infused_wall",
+          "description": "Walls encrusted with shifting nanite clusters that glow intermittently.",
+          "color": "#3b0a5e",
+          "texture": {
+            "tileset_position": {
+              "x": 6,
+              "y": 16
+            },
+            "tileset_description": "A stone wall with a door in the middle."
+          }
+        },
+        "floor_tile_with_texture": {
+          "name": "core_ember_floor",
+          "description": "Floor composed of hardened plasma remnants, glowing with intermittent ember pulses.",
+          "color": "#2c0c3d",
+          "texture": {
+            "tileset_position": {
+              "x": 48,
+              "y": 12
+            },
+            "tileset_description": "Stone or iron floor with some details on the edge."
+          }
+        }
+      }
+    ]
+  },
+  "enemies": {
+    "items": [
+      {
+        "tile": {
+          "name": "scrap_hopper",
+          "description": "A gaunt, rust‑caked drone with exposed circuitry, darting like a metallic beetle across the wasteland.",
+          "color": "#5A3B2F"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "scrap_hopper",
+          "description": "A gaunt, rust‑caked drone with exposed circuitry, darting like a metallic beetle across the wasteland.",
+          "color": "#5A3B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 11,
+              "y": 20
+            },
+            "tileset_description": "A war tank."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "rust_spitter",
+          "description": "Thin, elongated sentinel that spits corrosive droplets, its chassis covered in flaking rust.",
+          "color": "#7C4A2D"
+        },
+        "weight": 3,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "rust_spitter",
+          "description": "Thin, elongated sentinel that spits corrosive droplets, its chassis covered in flaking rust.",
+          "color": "#7C4A2D",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cinder_wraith",
+          "description": "A skeletal frame of twisted metal that glides silently, leaving a trail of ember‑filled ash.",
+          "color": "#3E2A1F"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "cinder_wraith",
+          "description": "A skeletal frame of twisted metal that glides silently, leaving a trail of ember‑filled ash.",
+          "color": "#3E2A1F",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 6
+            },
+            "tileset_description": "A skeleton without weapons or armor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "gear_sprinter",
+          "description": "Compact, gear‑driven crawler with flashing LEDs, moving in rapid, erratic bursts.",
+          "color": "#6F4E3C"
+        },
+        "weight": 3,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "gear_sprinter",
+          "description": "Compact, gear‑driven crawler with flashing LEDs, moving in rapid, erratic bursts.",
+          "color": "#6F4E3C",
+          "texture": {
+            "tileset_position": {
+              "x": 14,
+              "y": 19
+            },
+            "tileset_description": "An alien spaceship."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "nanite_swarmlet",
+          "description": "A cloud of shimmering nanites contained in a fragile husk, buzzing like a metallic swarm.",
+          "color": "#8A6F5A"
+        },
+        "weight": 2,
+        "thread": 3,
+        "tile_with_texture": {
+          "name": "nanite_swarmlet",
+          "description": "A cloud of shimmering nanites contained in a fragile husk, buzzing like a metallic swarm.",
+          "color": "#8A6F5A",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shard_flicker",
+          "description": "A slender construct of broken glass‑like plates that flicker with erratic light pulses.",
+          "color": "#4B3A2B"
+        },
+        "weight": 3,
+        "thread": 2,
+        "tile_with_texture": {
+          "name": "shard_flicker",
+          "description": "A slender construct of broken glass‑like plates that flicker with erratic light pulses.",
+          "color": "#4B3A2B",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 8
+            },
+            "tileset_description": "The specter of a person. A person without a face. A transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "filament_ghoul",
+          "description": "A lanky figure draped in frayed power cables, its eyes glowing with dim neon filaments.",
+          "color": "#5D4738"
+        },
+        "weight": 3,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "filament_ghoul",
+          "description": "A lanky figure draped in frayed power cables, its eyes glowing with dim neon filaments.",
+          "color": "#5D4738",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 1
+            },
+            "tileset_description": "A hooded figure holding a staff. Their hands are open."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "silt_scavenger",
+          "description": "A low‑profile crawler covered in dust‑coated plates, skittering over silt with uncanny speed.",
+          "color": "#6D5A48"
+        },
+        "weight": 3,
+        "thread": 4,
+        "tile_with_texture": {
+          "name": "silt_scavenger",
+          "description": "A low‑profile crawler covered in dust‑coated plates, skittering over silt with uncanny speed.",
+          "color": "#6D5A48",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "oxide_stalker",
+          "description": "Thin, oxidized metal limbs clank softly as it stalks, its surface pitted and cracked.",
+          "color": "#4E3D2F"
+        },
+        "weight": 2,
+        "thread": 1,
+        "tile_with_texture": {
+          "name": "oxide_stalker",
+          "description": "Thin, oxidized metal limbs clank softly as it stalks, its surface pitted and cracked.",
+          "color": "#4E3D2F",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "flare_urchin",
+          "description": "A spiny, bioluminescent entity that darts between shadows, emitting brief flares of light.",
+          "color": "#7A5B44"
+        },
+        "weight": 3,
+        "thread": 5,
+        "tile_with_texture": {
+          "name": "flare_urchin",
+          "description": "A spiny, bioluminescent entity that darts between shadows, emitting brief flares of light.",
+          "color": "#7A5B44",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 5
+            },
+            "tileset_description": "An insect with multiple legs. It resembles a spider."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "iron_golem",
+          "description": "Massive hulking construct of riveted iron plates, its joints grinding with each step.",
+          "color": "#2C2C2C"
+        },
+        "weight": 9,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "iron_golem",
+          "description": "Massive hulking construct of riveted iron plates, its joints grinding with each step.",
+          "color": "#2C2C2C",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "magnet_brute",
+          "description": "Broad, magnetized torso pulsing with magnetic fields, dragging metal debris as it moves.",
+          "color": "#3B3B3B"
+        },
+        "weight": 8,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "magnet_brute",
+          "description": "Broad, magnetized torso pulsing with magnetic fields, dragging metal debris as it moves.",
+          "color": "#3B3B3B",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corrupt_sentinel",
+          "description": "Tall, armored sentinel with shifting weapon modules, its chassis scarred by nanite corruption.",
+          "color": "#4A4A4A"
+        },
+        "weight": 9,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "corrupt_sentinel",
+          "description": "Tall, armored sentinel with shifting weapon modules, its chassis scarred by nanite corruption.",
+          "color": "#4A4A4A",
+          "texture": {
+            "tileset_position": {
+              "x": 29,
+              "y": 9
+            },
+            "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "acidic_hulker",
+          "description": "Bulked up, slime‑covered behemoth oozing acidic runoff, its surface mottled with corrosion.",
+          "color": "#5C3F2F"
+        },
+        "weight": 9,
+        "thread": 6,
+        "tile_with_texture": {
+          "name": "acidic_hulker",
+          "description": "Bulked up, slime‑covered behemoth oozing acidic runoff, its surface mottled with corrosion.",
+          "color": "#5C3F2F",
+          "texture": {
+            "tileset_position": {
+              "x": 27,
+              "y": 8
+            },
+            "tileset_description": "A slime, a small cone-shaped creature."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cobalt_colossus",
+          "description": "Gigantic figure forged from deep‑blue cobalt alloy, humming with residual energy.",
+          "color": "#1A2B3C"
+        },
+        "weight": 8,
+        "thread": 7,
+        "tile_with_texture": {
+          "name": "cobalt_colossus",
+          "description": "Gigantic figure forged from deep‑blue cobalt alloy, humming with residual energy.",
+          "color": "#1A2B3C",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "nanite_titan",
+          "description": "Enormous mass of intertwining nanite clusters, constantly reshaping its metallic form.",
+          "color": "#2F4F4F"
+        },
+        "weight": 9,
+        "thread": 8,
+        "tile_with_texture": {
+          "name": "nanite_titan",
+          "description": "Enormous mass of intertwining nanite clusters, constantly reshaping its metallic form.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "core_warden",
+          "description": "Towering guardian of the Corrupt Core, its armor fused with glowing reactor veins.",
+          "color": "#0F0F0F"
+        },
+        "weight": 10,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "core_warden",
+          "description": "Towering guardian of the Corrupt Core, its armor fused with glowing reactor veins.",
+          "color": "#0F0F0F",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_reaver",
+          "description": "A dark, void‑shrouded entity that absorbs light, its surface rippling like liquid metal.",
+          "color": "#111111"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "void_reaver",
+          "description": "A dark, void‑shrouded entity that absorbs light, its surface rippling like liquid metal.",
+          "color": "#111111",
+          "texture": {
+            "tileset_position": {
+              "x": 24,
+              "y": 7
+            },
+            "tileset_description": "The specter of a person. It looks like a transparent person."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "plasma_behemoth",
+          "description": "Massive beast encased in crackling plasma armor, radiating intense heat.",
+          "color": "#FF4500"
+        },
+        "weight": 10,
+        "thread": 9,
+        "tile_with_texture": {
+          "name": "plasma_behemoth",
+          "description": "Massive beast encased in crackling plasma armor, radiating intense heat.",
+          "color": "#FF4500",
+          "texture": {
+            "tileset_position": {
+              "x": 30,
+              "y": 0
+            },
+            "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "entropy_monolith",
+          "description": "Imposing monolith of twisted steel and nanite lattice, exuding chaotic energy.",
+          "color": "#222222"
+        },
+        "weight": 10,
+        "thread": 10,
+        "tile_with_texture": {
+          "name": "entropy_monolith",
+          "description": "Imposing monolith of twisted steel and nanite lattice, exuding chaotic energy.",
+          "color": "#222222",
+          "texture": {
+            "tileset_position": {
+              "x": 31,
+              "y": 6
+            },
+            "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+          }
+        }
+      }
+    ]
+  },
+  "weapons": {
+    "items": [
+      {
+        "tile": {
+          "name": "rusty_pipe_dagger",
+          "description": "A short pipe bent into a crude dagger, its rusted edge drips corrosion.",
+          "color": "#6B4C3A"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "rusty_pipe_dagger",
+          "description": "A short pipe bent into a crude dagger, its rusted edge drips corrosion.",
+          "color": "#6B4C3A",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "salvaged_pipe_hammer",
+          "description": "A heavy pipe welded to a steel head, the wood grip splintered.",
+          "color": "#7A5C4F"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "salvaged_pipe_hammer",
+          "description": "A heavy pipe welded to a steel head, the wood grip splintered.",
+          "color": "#7A5C4F",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "jagged_metal_shank",
+          "description": "Sharp scrap metal ripped from a broken conduit, jagged and unforgiving.",
+          "color": "#5D3A2B"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "jagged_metal_shank",
+          "description": "Sharp scrap metal ripped from a broken conduit, jagged and unforgiving.",
+          "color": "#5D3A2B",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "scrap_spear",
+          "description": "A length of rebar tipped with a jagged metal shard, balanced for thrust.",
+          "color": "#8B6D5C"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "scrap_spear",
+          "description": "A length of rebar tipped with a jagged metal shard, balanced for thrust.",
+          "color": "#8B6D5C",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 5
+            },
+            "tileset_description": "An iron spear with a hook or anchor at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "welded_crowbar",
+          "description": "A crowbar reforged with extra plates, its prongs glint with lingering oil.",
+          "color": "#4E3B33"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "welded_crowbar",
+          "description": "A crowbar reforged with extra plates, its prongs glint with lingering oil.",
+          "color": "#4E3B33",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 5
+            },
+            "tileset_description": "Detailed iron spear."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "broken_rebar_club",
+          "description": "A massive piece of broken rebar, its ends bent into a blunt hammer.",
+          "color": "#7F5E4A"
+        },
+        "rarity": 2,
+        "weight": 6,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "broken_rebar_club",
+          "description": "A massive piece of broken rebar, its ends bent into a blunt hammer.",
+          "color": "#7F5E4A",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "improvised_knife",
+          "description": "A kitchen knife salvaged from a wreck, its blade nicked and dull.",
+          "color": "#6F4E3D"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 1,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "improvised_knife",
+          "description": "A kitchen knife salvaged from a wreck, its blade nicked and dull.",
+          "color": "#6F4E3D",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corroded_revolver",
+          "description": "A six‑shooter coated in green rust, firing sputtering lead.",
+          "color": "#3A5F5F"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "corroded_revolver",
+          "description": "A six‑shooter coated in green rust, firing sputtering lead.",
+          "color": "#3A5F5F",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 9
+            },
+            "tileset_description": "Old pistol. Alien pistol. Different pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "makeshift_bow",
+          "description": "A warped wooden bow reinforced with scrap metal, strings frayed.",
+          "color": "#8A7A6B"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "makeshift_bow",
+          "description": "A warped wooden bow reinforced with scrap metal, strings frayed.",
+          "color": "#8A7A6B",
+          "texture": {
+            "tileset_position": {
+              "x": 41,
+              "y": 6
+            },
+            "tileset_description": "A rare wooden bow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "jury_rigged_crossbow",
+          "description": "A crossbow cobbled from pipe fittings, bolts are jagged nails.",
+          "color": "#5C4B44"
+        },
+        "rarity": 2,
+        "weight": 4,
+        "mana_cost": 3,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "jury_rigged_crossbow",
+          "description": "A crossbow cobbled from pipe fittings, bolts are jagged nails.",
+          "color": "#5C4B44",
+          "texture": {
+            "tileset_position": {
+              "x": 39,
+              "y": 5
+            },
+            "tileset_description": "Large wooden crossbow."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shrapnel_thrower",
+          "description": "A sling fashioned from a cracked pipe, hurling rusted shrapnel.",
+          "color": "#6E5A4F"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 2,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "shrapnel_thrower",
+          "description": "A sling fashioned from a cracked pipe, hurling rusted shrapnel.",
+          "color": "#6E5A4F",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 7
+            },
+            "tileset_description": "Old broken iron sword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "cracked_railgun",
+          "description": "A low‑power railgun with a cracked barrel, emits a faint electric hum.",
+          "color": "#2F4F4F"
+        },
+        "rarity": 2,
+        "weight": 5,
+        "mana_cost": 4,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "cracked_railgun",
+          "description": "A low‑power railgun with a cracked barrel, emits a faint electric hum.",
+          "color": "#2F4F4F",
+          "texture": {
+            "tileset_position": {
+              "x": 38,
+              "y": 9
+            },
+            "tileset_description": "Old pistol. Alien pistol. Different pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "flicker_lantern_staff",
+          "description": "A staff topped with a flickering lantern, casting wavering light.",
+          "color": "#B08A5E"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 3,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "flicker_lantern_staff",
+          "description": "A staff topped with a flickering lantern, casting wavering light.",
+          "color": "#B08A5E",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "static_discharge_wand",
+          "description": "A copper rod that crackles with intermittent static.",
+          "color": "#C0C0C0"
+        },
+        "rarity": 2,
+        "weight": 2,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "static_discharge_wand",
+          "description": "A copper rod that crackles with intermittent static.",
+          "color": "#C0C0C0",
+          "texture": {
+            "tileset_position": {
+              "x": 33,
+              "y": 20
+            },
+            "tileset_description": "Wooden stick. Piece of bamboo."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "pulse_emitter",
+          "description": "A handheld device that releases short bursts of kinetic pulse.",
+          "color": "#7B8D8E"
+        },
+        "rarity": 2,
+        "weight": 3,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "pulse_emitter",
+          "description": "A handheld device that releases short bursts of kinetic pulse.",
+          "color": "#7B8D8E",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "ion_blade",
+          "description": "A sleek blade humming with ionized plasma along its edge.",
+          "color": "#1E90FF"
+        },
+        "rarity": 7,
+        "weight": 3,
+        "mana_cost": 6,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "ion_blade",
+          "description": "A sleek blade humming with ionized plasma along its edge.",
+          "color": "#1E90FF",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 2
+            },
+            "tileset_description": "Detailed scythe."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "plasma_hammer",
+          "description": "A hammer with a plasma core that sizzles on impact.",
+          "color": "#FF4500"
+        },
+        "rarity": 7,
+        "weight": 7,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "plasma_hammer",
+          "description": "A hammer with a plasma core that sizzles on impact.",
+          "color": "#FF4500",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "magnetic_poleaxe",
+          "description": "A poleaxe with a magnetic field that pulls metal shards toward the blade.",
+          "color": "#4682B4"
+        },
+        "rarity": 7,
+        "weight": 6,
+        "mana_cost": 5,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "magnetic_poleaxe",
+          "description": "A poleaxe with a magnetic field that pulls metal shards toward the blade.",
+          "color": "#4682B4",
+          "texture": {
+            "tileset_position": {
+              "x": 40,
+              "y": 7
+            },
+            "tileset_description": "Large axe with only one blade at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "reinforced_saw_sword",
+          "description": "A sword with a serrated, reinforced blade that raspes through armor.",
+          "color": "#8B0000"
+        },
+        "rarity": 7,
+        "weight": 5,
+        "mana_cost": 4,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "reinforced_saw_sword",
+          "description": "A sword with a serrated, reinforced blade that raspes through armor.",
+          "color": "#8B0000",
+          "texture": {
+            "tileset_position": {
+              "x": 32,
+              "y": 9
+            },
+            "tileset_description": "Iron sword with a straight blade. Low rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "auto_loader_pistol",
+          "description": "A compact pistol with an automatic loading mechanism, clicks rapidly.",
+          "color": "#708090"
+        },
+        "rarity": 7,
+        "weight": 3,
+        "mana_cost": 5,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "auto_loader_pistol",
+          "description": "A compact pistol with an automatic loading mechanism, clicks rapidly.",
+          "color": "#708090",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 9
+            },
+            "tileset_description": "Automatic pistol, glock, modern pistol."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "acid_spray_gun",
+          "description": "A gun that fires a fine mist of corrosive acid, hissing on contact.",
+          "color": "#556B2F"
+        },
+        "rarity": 7,
+        "weight": 4,
+        "mana_cost": 6,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "acid_spray_gun",
+          "description": "A gun that fires a fine mist of corrosive acid, hissing on contact.",
+          "color": "#556B2F",
+          "texture": {
+            "tileset_position": {
+              "x": 43,
+              "y": 9
+            },
+            "tileset_description": "Missile launcher. Bazooka."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "railgun_sniper",
+          "description": "A high‑precision railgun capable of piercing steel at long range.",
+          "color": "#2E2E2E"
+        },
+        "rarity": 7,
+        "weight": 6,
+        "mana_cost": 7,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "railgun_sniper",
+          "description": "A high‑precision railgun capable of piercing steel at long range.",
+          "color": "#2E2E2E",
+          "texture": {
+            "tileset_position": {
+              "x": 42,
+              "y": 9
+            },
+            "tileset_description": "Sniper rifle, machine gun with scope. Modern weapon."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "nanite_swarm_staff",
+          "description": "A staff that releases a cloud of nanites that repair allies or erode foes.",
+          "color": "#00CED1"
+        },
+        "rarity": 7,
+        "weight": 4,
+        "mana_cost": 8,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "nanite_swarm_staff",
+          "description": "A staff that releases a cloud of nanites that repair allies or erode foes.",
+          "color": "#00CED1",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "resonant_core_wand",
+          "description": "A wand embedded with a fragment of the Corrupt Core, emits resonant pulses.",
+          "color": "#800080"
+        },
+        "rarity": 7,
+        "weight": 2,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "resonant_core_wand",
+          "description": "A wand embedded with a fragment of the Corrupt Core, emits resonant pulses.",
+          "color": "#800080",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "corebreaker_greatsword",
+          "description": "A massive greatsword forged from Core fragments, its blade vibrates with raw energy.",
+          "color": "#FFD700"
+        },
+        "rarity": 10,
+        "weight": 9,
+        "mana_cost": 8,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "corebreaker_greatsword",
+          "description": "A massive greatsword forged from Core fragments, its blade vibrates with raw energy.",
+          "color": "#FFD700",
+          "texture": {
+            "tileset_position": {
+              "x": 36,
+              "y": 8
+            },
+            "tileset_description": "High-rarity greatsword. Detailed hilt."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "shatterstorm_hammer",
+          "description": "A hammer that summons a storm of shattering shockwaves on each strike.",
+          "color": "#00FF7F"
+        },
+        "rarity": 10,
+        "weight": 10,
+        "mana_cost": 9,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "shatterstorm_hammer",
+          "description": "A hammer that summons a storm of shattering shockwaves on each strike.",
+          "color": "#00FF7F",
+          "texture": {
+            "tileset_position": {
+              "x": 37,
+              "y": 7
+            },
+            "tileset_description": "Large two-handed hammer."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "echo_fang_dagger",
+          "description": "A dagger that echoes the scream of the Core, each thrust reverberates.",
+          "color": "#FF1493"
+        },
+        "rarity": 10,
+        "weight": 2,
+        "mana_cost": 7,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "echo_fang_dagger",
+          "description": "A dagger that echoes the scream of the Core, each thrust reverberates.",
+          "color": "#FF1493",
+          "texture": {
+            "tileset_position": {
+              "x": 32,
+              "y": 6
+            },
+            "tileset_description": "Iron dagger of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "void_cannon",
+          "description": "A massive cannon that fires bolts of void energy, distorting space.",
+          "color": "#4B0082"
+        },
+        "rarity": 10,
+        "weight": 10,
+        "mana_cost": 10,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "void_cannon",
+          "description": "A massive cannon that fires bolts of void energy, distorting space.",
+          "color": "#4B0082",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 8
+            },
+            "tileset_description": "A very rare greatsword."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "stormbreaker_bow",
+          "description": "A bow crafted from storm‑charged alloy, arrows crackle with lightning.",
+          "color": "#1C1C1C"
+        },
+        "rarity": 10,
+        "weight": 5,
+        "mana_cost": 9,
+        "weapon_type": "range",
+        "tile_with_texture": {
+          "name": "stormbreaker_bow",
+          "description": "A bow crafted from storm‑charged alloy, arrows crackle with lightning.",
+          "color": "#1C1C1C",
+          "texture": {
+            "tileset_position": {
+              "x": 39,
+              "y": 6
+            },
+            "tileset_description": "Simple bow of medium rarity."
+          }
+        }
+      },
+      {
+        "tile": {
+          "name": "primordial_nano_staff",
+          "description": "An ancient staff pulsing with primordial nanites, reshapes matter at will.",
+          "color": "#7FFFD4"
+        },
+        "rarity": 10,
+        "weight": 4,
+        "mana_cost": 10,
+        "weapon_type": "melee",
+        "tile_with_texture": {
+          "name": "primordial_nano_staff",
+          "description": "An ancient staff pulsing with primordial nanites, reshapes matter at will.",
+          "color": "#7FFFD4",
+          "texture": {
+            "tileset_position": {
+              "x": 35,
+              "y": 4
+            },
+            "tileset_description": "A staff with a gemstone at the tip."
+          }
+        }
+      }
+    ]
+  },
+  "final_objective": {
+    "tile": {
+      "name": "core_heart_fragment",
+      "description": "A pulsating, obsidian‑black crystal encased in a lattice of molten alloy, its surface roils with flickering veins of blue‑white energy that echo the Corrupt Core's heartbeat. The crystal hums with a low, resonant tone, and faint nanite sparks dance across its facets, casting eerie light on any who behold it.",
+      "color": "#0A0A2F"
+    },
+    "back_history": "The Core Heart Fragment is the shattered core of the original Forge reactor, ripped from its containment during the Shatter and sealed at the deepest vault of the Corrupt Core to prevent its boundless energy from annihilating the world. Its unstable nanite lattice is the very source of the pervasive corruption that poisons the Expanse, warping metal, mutating fauna, and driving survivors to madness. Only by extracting the fragment and carrying it back to the surface can the ancient emergency protocols be re‑engaged to either reseal the reactor and purge the nanite plague, or to harness its power as a weapon against rival factions. Leaving it buried would allow the corruption to spread unchecked, sealing the fate of the Scoured Expanse forever.",
+    "tile_with_texture": {
+      "name": "core_heart_fragment",
+      "description": "A pulsating, obsidian‑black crystal encased in a lattice of molten alloy, its surface roils with flickering veins of blue‑white energy that echo the Corrupt Core's heartbeat. The crystal hums with a low, resonant tone, and faint nanite sparks dance across its facets, casting eerie light on any who behold it.",
+      "color": "#0A0A2F",
+      "texture": {
+        "tileset_position": {
+          "x": 35,
+          "y": 4
+        },
+        "tileset_description": "A staff with a gemstone at the tip."
+      }
+    }
+  },
+  "usage_metadata": {
+    "openai/gpt-oss-120b": {
+      "output_token_details": {
+        "reasoning": 4815
+      },
+      "output_tokens": 9892,
+      "total_tokens": 18791,
+      "input_tokens": 8899
+    }
+  }
+}

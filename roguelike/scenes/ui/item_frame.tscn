@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8lkaodd7dm65"]
+
+[ext_resource type="Texture2D" uid="uid://dmse8o7pqggyq" path="res://images/tileset_colored.png" id="2_2aov2"]
+[ext_resource type="Script" uid="uid://c5jlh34xbgldd" path="res://scenes/ui/item_frame.gd" id="2_jn6dj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jn6dj"]
+bg_color = Color(0.068798296, 0.06879826, 0.06879828, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c53ex"]
+atlas = ExtResource("2_2aov2")
+region = Rect2(560, 128, 16, 16)
+
+[node name="ItemFrame" type="HBoxContainer" node_paths=PackedStringArray("name_label", "use_button", "equip_button", "drop_button", "texture_rect")]
+custom_minimum_size = Vector2(0, 30)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+script = ExtResource("2_jn6dj")
+name_label = NodePath("NameLabel")
+use_button = NodePath("UseButton")
+equip_button = NodePath("EquipButton")
+drop_button = NodePath("DropButton")
+texture_rect = NodePath("MarginContainer/Panel/TextureRect")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+custom_minimum_size = Vector2(31.295, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jn6dj")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_c53ex")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "The Better Sword In the World"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="UseButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Use"
+
+[node name="EquipButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Equipe"
+
+[node name="DropButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Drop"
